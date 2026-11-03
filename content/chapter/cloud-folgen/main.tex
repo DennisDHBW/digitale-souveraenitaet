@@ -1,0 +1,184 @@
+%!TEX root = ../../../main.tex
+\chapter{Gefährdung von Lebensdauer und Funktionsfähigkeit}\label{chap:cloud-folgen}
+% Kennzeichnung der Autorenschaft (Vorgabe der Arbeit) -- Form ggf. in der Gruppe vereinheitlichen
+\noindent\textit{Verfasser: [Name]}
+
+TEST
+
+Dieses Kapitel untersucht die Folgen der in Kapitel~\ref{chap:cloud-ursachen}
+beschriebenen Abhängigkeit. Auf eine begriffliche Einordnung folgen die
+Analyse des Extremfalls Gigaset und ein Vergleich mit weiteren Abschaltungen.
+
+\section{Softwarebedingte Obsoleszenz und prekäres Eigentum}\label{sec:folgen-rahmen}
+
+Die Studie für das \acrshort{UBA} versteht unter Softwareobsoleszenz die
+Verkürzung der Nutzungsdauer eines technisch funktionsfähigen Geräts aufgrund
+von Software \autocite[vgl.][S.~5]{jaegererben:2023}. Neben Ursachen in der
+Software selbst nennt sie Veränderungen ihres Umfelds, etwa die Einstellung
+des Supports \autocite[vgl.][S.~32\,f.]{jaegererben:2023}, und behandelt
+externe Abhängigkeiten wie Cloud-Server als eigene Kategorie
+\autocite[vgl.][S.~151\,ff.]{jaegererben:2023}. Die Ursachen seien dabei
+weniger technischer als wirtschaftlicher und organisatorischer Natur
+\autocite[vgl.][S.~5]{jaegererben:2023}. Hinzu kommen einseitige Änderungen
+über Updates und Nutzungsbedingungen, wie die in Kapitel~\ref{chap:cloud-ursachen}
+beschriebenen Schnittstellensperren und nachträglichen Gebühren.
+
+Für Käufer stellt sich damit die Frage, was sie eigentlich erwerben.
+Perzanowski und Schultz zeigen, dass Lizenzbedingungen und digitale
+Kontrollmechanismen klassische Eigentumsrechte aushöhlen
+\autocite[vgl.][]{perzanowski:2016}. Tusikov spricht von einem hybriden und
+prekären Eigentum: Die Hardware gehört dem Käufer, die Software darf er nur
+im Rahmen einer Lizenz nutzen \autocite[vgl.][S.~11]{tusikov:2019}. Dass
+Hersteller diese Verfügungsgewalt ausüben, zeigte bereits 2016 der Fall
+Revolv: Das zum Alphabet-Konzern gehörende Unternehmen Nest hatte den
+Hersteller dieser Smart-Home-Zentrale übernommen und schaltete die Geräte zum
+15.~Mai~2016 vollständig ab, um sich auf die eigene Plattform zu
+konzentrieren \autocites[vgl.][]{protalinski:2016}{cullen:2016}. Geräte
+werden also nicht nur durch Insolvenzen unbrauchbar, sondern auch durch
+strategische Entscheidungen wirtschaftlich starker Unternehmen.
+
+\section{Fallanalyse: Gigaset Smart Home}\label{sec:folgen-gigaset}
+
+Am deutlichsten zeigen sich die Folgen bei Gigaset. Über das Vermögen der
+Gigaset Communications GmbH wurde am 29.~Januar~2024 das Insolvenzverfahren
+eröffnet. Für das Telefoniegeschäft fand sich ein Käufer, für den Bereich
+Smart Home/Care nicht. Das Unternehmen stellte die Cloud-Dienste deshalb zum
+29.~März~2024 ein, da ein Weiterbetrieb insolvenzrechtlich nicht möglich sei
+\autocite[vgl.][]{gigaset:2024b}. Zwischen Verfahrenseröffnung und
+Abschaltung lagen nur zwei Monate.
+
+Nach Angaben des Herstellers waren danach weder die Apps noch die vernetzten
+Sensoren und Geräte nutzbar. Gebuchte Kamera-Servicepakete endeten, eine
+Rückgabe der Geräte war ausgeschlossen, und nur der lokale Alarm des
+Rauchmelders funktionierte weiter \autocite[vgl.][]{gigaset:2024a}. Betroffen
+waren vor allem Tür-, Fenster- und Bewegungssensoren, Alarmsysteme und
+Kameras \autocite[vgl.][]{wittkowski:2024}. Der Ausfall traf damit den Schutz
+der Wohnung, für den die Geräte angeschafft worden waren. Ansprüche konnten
+die Kunden nur als Insolvenzforderungen anmelden, deren Erfüllung von der
+verbleibenden Masse abhängt \autocite[vgl.][]{teltarif:2024}.
+
+Gemessen an Kapitel~2 zeigt der Fall einen vollständigen Verlust der
+Anwendungssouveränität, denn die Nutzbarkeit hing allein am Fortbestand eines
+Unternehmens. Die Entscheidungssouveränität war schon beim Kauf
+eingeschränkt, weil diese Abhängigkeit kaum erkennbar war
+(vgl. Abschnitt~\ref{sec:cloud-haas}). Ökologisch steht der Fall für das
+zusätzliche Elektronikschrottaufkommen, das die \acrshort{UBA}-Studie als
+Folge softwarebedingter Obsoleszenz beschreibt
+\autocite[vgl.][S.~18]{jaegererben:2023}.
+
+\section{Fallvergleich: Schutzfaktoren gegen den Funktionsverlust}\label{sec:folgen-vergleich}
+
+Nicht jede Abschaltung verläuft so drastisch.
+Tabelle~\ref{tab:folgen-abschaltungen} vergleicht weitere Fälle aus den
+Jahren 2022 bis 2026, geordnet vom schwersten zum mildesten Ausgang.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Vergleich von Abschaltungen im Smart Home}
+  \label{tab:folgen-abschaltungen}
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.45cm}
+      >{\raggedright\arraybackslash}p{1.85cm}
+      >{\raggedright\arraybackslash}p{2.6cm}
+      >{\raggedright\arraybackslash}X
+      >{\raggedright\arraybackslash}p{2.35cm}@{}}
+    \hline
+    \textbf{Fall} & \textbf{Abschal\-tung} & \textbf{Anlass}
+      & \textbf{Verbleibende Funktion} & \textbf{Schutzfaktor} \\
+    \hline
+    Gigaset Smart Home & 29.03.2024 & Insolvenz
+      & Lediglich lokaler Rauchmelderalarm & Keiner \\
+    Belkin Wemo & 31.01.2026 & Umschichtung von Ressourcen
+      & Nur Geräte mit Apple HomeKit oder Thread & Offener Standard \\
+    Insteon & April 2022 & Geschäfts\-aufgabe ohne Vorwarnung
+      & Lokale Steuerung über Home Assistant; Dienst später von Nutzern
+        übernommen & Lokale Grundfunktion \\
+    devolo Home Control & 31.12.2025 & Einstellung des Systems
+      & Eingeschränkter lokaler Betrieb; Z-Wave-Geräte an fremder Zentrale
+      & Offenes Funkprotokoll \\
+    Google Nest (1./2.~Gen.) & 25.10.2025 & Veraltete Hardware
+      & Bedienung am Gerät, gespeicherte Zeitpläne & Lokale Grundfunktion \\
+    Logitech Squeezebox & 2024 & Einstellung des Onlinedienstes
+      & Betrieb mit lokalem Open-Source-Server & Offene Software \\
+    Bose SoundTouch & 06.05.2026 & Supportende
+      & Lokale App, offengelegte \acrshort{API}, Community-Lösungen
+      & Offene Schnittstelle \\
+    \hline
+  \end{tabularx}
+  \par\smallskip
+  \raggedright\scriptsize
+  Quelle: Eigene Darstellung auf Basis von
+  \cite{gigaset:2024a,belkin:2026,rogerson:2022a,schoutsen:2022,giga:2025,google:2025,golem:2024,rudra:2026,stereoguide:2026}.
+\end{table}
+
+Bei Belkin funktionieren nur Wemo-Geräte weiter, die zuvor in Apple HomeKit
+eingebunden waren oder auf dem Standard Thread basieren
+\autocite[vgl.][]{belkin:2026}. Aufschlussreich ist Insteon: Das Unternehmen
+schaltete seine Server im April~2022 ohne Vorwarnung ab
+\autocite[vgl.][]{rogerson:2022a}. Weil die Geräte lokal kommunizierten,
+ließen sie sich jedoch über Home Assistant ohne Cloud weiter steuern
+\autocite[vgl.][]{schoutsen:2022}, bis eine Gruppe von Nutzern das
+Unternehmen im Juni~2022 übernahm \autocite[vgl.][]{rogerson:2022b}. Die
+ältesten Nest-Thermostate behalten nach dem Supportende ihre Bedienung am
+Gerät und gespeicherte Zeitpläne \autocites[vgl.][]{google:2025}{heise:2025a}.
+Logitech und Bose schließlich zeigen den Wert offener Software: Die
+Squeezebox-Player laufen mit einem von der Community gepflegten
+Open-Source-Server weiter \autocites[vgl.][]{golem:2024}{lyrion:oj}, und auf
+Basis der von Bose veröffentlichten Schnittstellendokumentation bilden
+Community-Projekte die SoundTouch-Cloud lokal nach
+\autocites[vgl.][]{rudra:2026}{gesellix:2026}.
+
+Aus dem Vergleich lassen sich drei Schutzfaktoren ableiten:
+\begin{enumerate}
+  \item eine \textbf{lokale Grundfunktion}, die ohne Server erhalten bleibt,
+  \item ein \textbf{offener Standard oder ein offenes Funkprotokoll}, über
+        das sich das Gerät in andere Systeme einbinden lässt,
+  \item eine \textbf{offengelegte Schnittstelle oder offene Software}, die
+        Dritten die Weiterentwicklung erlaubt.
+\end{enumerate}
+Fehlen alle drei wie bei Gigaset, wird das Gerät mit der Abschaltung wertlos.
+Die Faktoren entsprechen den Stoßrichtungen der \acrshort{UBA}-Studie, die
+langfristige Interoperabilität und die Gewährleistung definierter
+Kernfunktionen als zentrale Ansatzpunkte nennt
+\autocite[vgl.][S.~14]{jaegererben:2023}.
+
+Weiterbetrieb bedeutet allerdings nicht Sicherheit. Mit dem Supportende
+entfallen meist auch Sicherheitsupdates; für SoundTouch schließt Bose weitere
+Patches ausdrücklich aus \autocite[vgl.][]{stereoguide:2026}. Eine
+Langzeituntersuchung zeigt, dass Millionen vernetzter Geräte nach ihrem
+Supportende in Betrieb bleiben und mehr als die Hälfte der gefundenen
+Schwachstellen erst danach entdeckt wurde \autocite[vgl.][]{wang:2023}. Die
+Schutzfaktoren sichern also die Funktion, nicht automatisch die Sicherheit.
+Wie sich solche Geräte im Heimnetz absichern lassen, behandelt Kapitel~8.
+
+\section{Zwischenfazit}\label{sec:folgen-zwischenfazit}
+
+Die Cloud-Abhängigkeit vernetzter Haushaltsgeräte berührt alle drei
+Souveränitätsdimensionen: die \textbf{Datensouveränität}, weil Wohnungskarten
+bei einem Eigentümerwechsel ohne Mitsprache der Nutzer in neue Hände
+gelangen; die \textbf{Entscheidungssouveränität}, weil Hersteller Funktionen
+nach dem Kauf einseitig sperren oder bepreisen; und die
+\textbf{Anwendungssouveränität}, weil die Nutzbarkeit im Extremfall mit dem
+Hersteller endet.
+
+Das geltende Recht schließt diese Lücke nur teilweise. Die
+Aktualisierungspflicht für Waren mit digitalen Elementen trifft den
+Verkäufer und gilt für den Zeitraum, den Verbraucher nach Art und Zweck der
+Ware erwarten können \autocite[vgl.][§~475b Abs.~4 Nr.~2]{bgb:2026}; wie lang
+dieser ist, lässt das Gesetz offen. Der Data Act gewährt Zugang zu den Daten
+vernetzter Produkte \autocite[vgl.][Art.~4]{dataact:2023}, verpflichtet aber
+nicht zum Weiterbetrieb von Diensten, und in der Insolvenz bleiben ohnehin
+nur Insolvenzforderungen.
+
+Daraus folgen vier Anforderungen: eine lokale Rückfallebene für
+Kernfunktionen, offene Standards und Funkprotokolle, offengelegte
+Schnittstellen sowie Transparenz über die Dauer der Unterstützung
+einschließlich der Sicherheitsupdates. In diesem Sinne empfiehlt die
+\acrshort{UBA}-Studie, den Betrieb ohne externe Abhängigkeiten zu ermöglichen,
+externe Dienste mindestens zehn Jahre aufrechtzuerhalten und den
+Supportzeitraum verpflichtend anzugeben
+\autocite[vgl.][S.~18\,f.]{jaegererben:2023}. Die Kapitel~6 und~7 prüfen,
+inwieweit lokale Zentralen, offene Standards und alternative Firmware diese
+Anforderungen erfüllen.
