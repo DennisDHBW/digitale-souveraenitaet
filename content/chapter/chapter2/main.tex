@@ -1,0 +1,278 @@
+%!TEX root = ../../../main.tex
+\chapter{Cloud-Abhängigkeit, Lock-in und Funktionsverlust}\label{chap:cloud}
+\noindent\textit{Verfasser: Dennis Gerhardt}
+\medskip
+
+Beim Smart-TV steht im Vordergrund, welche Daten ein Gerät über seine Nutzer
+preisgibt. Bei vielen anderen Haushaltsgeräten reicht die Bindung an den
+Hersteller weiter: Sie entscheidet darüber, ob das Gerät überhaupt
+funktioniert. Dieses Kapitel untersucht, warum Hersteller solche Geräte an ihre
+Server binden und welche Folgen das für Nutzbarkeit, Lebensdauer und Eigentum
+hat. Leitend ist die These, dass der Cloud-Zwang überwiegend aus
+Geschäftsmodellen folgt und nicht aus technischer Notwendigkeit. Das
+eigentliche Problem ist dabei nicht die Cloud selbst, sondern das Fehlen einer
+lokalen Rückfallebene.
+
+\section{Cloud-Zentrierung und ihre ökonomischen Treiber}\label{sec:cloud-treiber}
+
+\subsection{Das Gerät als Endpunkt}\label{sec:cloud-endpunkt}
+
+Hoofnagle, Kesari und Perzanowski bezeichnen vernetzte Konsumgüter als
+\enquote{tethered}: Sie bleiben nach dem Kauf dauerhaft mit dem Verkäufer
+verbunden und werden dadurch von ihm abhängig \cite[S.~785]{hoofnagle:2019}.
+Getragen wird diese Bindung von eingebetteter Software, Sensorik und einer
+dauerhaften Netzwerkverbindung \cite[S.~789--792]{hoofnagle:2019}. Technisch
+bedeutet das, dass die Steuerungslogik nicht mehr im Gerät, sondern in den
+Rechenzentren des Herstellers liegt. Das Gerät wird zur Schnittstelle, die
+Befehle über Konto, App und Server empfängt, und verarbeitet ohne diese
+Verbindung oft nur noch einen Bruchteil seiner Funktionen.
+
+Die Bindung hat durchaus Vorzüge. Hersteller können vernetzte Geräte nach dem
+Kauf fortlaufend aktualisieren, verbessern und um neue Funktionen erweitern;
+manche Nutzer geben Kontrolle bereitwillig gegen eine ausgereifte Bedienung ab
+\cite[S.~804\,f., 808]{hoofnagle:2019}. Diese Vorteile setzen jedoch keine
+ausschließlich serverseitige Steuerung voraus. Updates lassen sich ebenso an
+Geräte verteilen, deren Grundfunktionen lokal laufen.
+
+Für die Nutzer entsteht aus der Cloud-Zentrierung eine doppelte Abhängigkeit:
+von der Verfügbarkeit der Infrastruktur und vom Fortbestand des Anbieters. Beim
+Saugroboter betrifft sie gerade die Funktionen, die ihn von einem einfachen
+Gerät unterscheiden. Er erfasst die Wohnung mit LiDAR- oder Kamerasensoren und
+erzeugt daraus eine Karte; raumgenaue Reinigung, Sperrzonen und Zeitpläne
+werden jedoch häufig über App und Herstellerkonto verwaltet. Wie weit diese
+Abhängigkeit reicht, zeigt der in Abschnitt~\ref{sec:cloud-neato} untersuchte
+Fall Neato. Technisch zwingend ist diese Architektur nicht, denn Karten und
+Zonen ließen sich ebenso auf dem Gerät oder im Heimnetz speichern. Sie ist eine
+Designentscheidung, deren Gründe vor allem ökonomischer Natur sind.
+
+\subsection{Vendor-Lock-in durch geschlossene Schnittstellen}\label{sec:cloud-lockin}
+
+Die Cloud-Zentrierung schafft die Voraussetzung für einen Vendor-Lock-in. Nach
+Hoofnagle et al.\ steigen mit der Bindung der Geräte die Wechselkosten, was
+Anbieter strategisch nutzen können, um Wettbewerb zu begrenzen und ihre
+Gewinne zu erhöhen \cite[S.~787, 809, 839\,ff.]{hoofnagle:2019}. Eine Studie im
+Auftrag des Umweltbundesamts (\acrshort{UBA}) beobachtet entsprechende
+Lock-in-Effekte, wenn Geräte nur mit Produkten desselben Herstellers
+zuverlässig zusammenarbeiten \cite[S.~16]{jaegererben:2023}. Sie beschreibt
+zudem sogenannte Gatekeeper, die rechtliche, finanzielle oder organisatorische
+Kontrolle über einzelne Schichten eines Produktsystems ausüben. Solche Akteure
+entstehen meist durch Plattform- und Netzwerkeffekte und sind oft Monopolisten
+oder Oligopolisten \cite[S.~55]{jaegererben:2023}.
+
+Im Smart Home wird dieser Hebel gezielt eingesetzt. Der Garagentorhersteller
+Chamberlain sperrte 2023 Drittanbieter aus seinem myQ-System aus und begründete
+dies damit, eine nicht autorisierte Nutzung seines Ökosystems durch fremde Apps
+verhindern zu wollen. Die Open-Source-Plattform Home Assistant musste ihre seit
+2017 bestehende Integration entfernen, während Partnerunternehmen gegen
+Bezahlung weiterhin Zugang erhielten \cite{homeassistant:2023}. Als nicht
+autorisiert gilt damit nicht der Zugriff Fremder, sondern die Steuerung des
+eigenen Garagentors über eine Software eigener Wahl. Bepreist wird keine neue
+Leistung, sondern die Möglichkeit, das eigene Gerät außerhalb des
+Hersteller-Ökosystems zu nutzen. Wer sein Garagentor in eine
+herstellerübergreifende Steuerung einbinden will, muss auf einen zahlenden
+Partner ausweichen oder das Gerät austauschen.
+
+Überträgt man die Bitkom-Definition, nach der digital souveräne Akteure
+\enquote{selbstbestimmt und selbstbewusst zwischen Alternativen} wählen können
+\cite[S.~7]{bitkom:2015}, auf Verbraucher, so ist vor allem die
+Entscheidungssouveränität betroffen: Eine echte Wahl besteht nur noch beim
+Kauf, nicht mehr während der Nutzung. Selbst diese Wahl ist eingeschränkt, denn
+ob ein Hersteller seine Schnittstellen später schließt, lässt sich beim Kauf
+nicht absehen.
+
+\subsection{Hardware as a Service}\label{sec:cloud-haas}
+
+Hinter dem Lock-in steht ein Finanzierungsproblem: Das Gerät wird einmal
+verkauft, der Serverbetrieb verursacht dauerhaft Kosten. Abonnements
+versprechen den Herstellern daher stetigere Einnahmen
+\cite[S.~806]{hoofnagle:2019}. Das Gerät wird so zur Plattform für
+wiederkehrende Erlöse, zu denen auch die im vorigen Kapitel beschriebene
+Verwertung von Nutzungsdaten zählt. Hoofnagle et al.\ beschreiben, wie sich
+dadurch der Charakter des Geschäfts verschiebt: Was wie ein Kauf aussieht, kann
+sich in ein Dienstverhältnis verwandeln, dessen Bedingungen der Anbieter
+nachträglich ändert. Statt ein Gerät auf einen Schlag abzuschalten, können
+Hersteller zudem Funktionen schrittweise entfernen oder die Leistung
+verschlechtern \cite[S.~814\,f.]{hoofnagle:2019}.
+
+Wie weit dieses Modell reichen kann, zeigt der norwegische Hersteller
+Futurehome. Er hatte seine Smart-Home-Zentrale an rund 38\,000 Kunden mit dem
+Versprechen verkauft, dass nach dem Kauf keine laufenden Gebühren anfallen.
+Nach der Insolvenz 2025 verlangte die Nachfolgegesellschaft eine Jahresgebühr;
+ohne sie entfallen App-Steuerung, Automationen und Energiefunktionen, und die
+Geräte lassen sich nur noch manuell bedienen. Durchgesetzt wurde dies per
+Firmware-Update auf bereits bezahlten Zentralen \cite{schoutsen:2025}. Der Fall
+belegt die Leitthese besonders deutlich: Die Funktionen liefen zuvor auf der
+Zentrale im Haushalt und wurden nicht aus technischen, sondern aus
+wirtschaftlichen Gründen gesperrt. Die Kunden standen dabei vor einer
+Zwangslage: Wer nicht zahlte, verlor den Nutzen der Zentrale und der
+eingebundenen Geräte; wer zahlte, war auf ein Unternehmen angewiesen, dessen
+Vorgänger sein Versprechen nicht hatte halten können.
+
+Abonnements sind nicht per se illegitim. Serverkosten sind real, und
+Hoofnagle et al.\ sehen in nutzungsabhängigen Modellen sogar die Chance, Käufern
+den Zugang zu erleichtern, die sich das vollständige Produkt nicht leisten
+könnten \cite[S.~807]{hoofnagle:2019}. Ein beim Kauf ausgewiesenes Abonnement
+erlaubt zudem eine informierte Entscheidung. Problematisch ist die nachträgliche
+Bepreisung bereits bezahlter Funktionen. Dass der Markt dies nicht korrigiert,
+erklärt sich aus einer Informationsasymmetrie: Vernetzte Produkte werden durch
+die dauerhafte Bindung von Such- zu Erfahrungsgütern, deren Eigenschaften sich
+erst nach dem Kauf zeigen \cite[S.~809]{hoofnagle:2019}. Wie lange ein Dienst
+betrieben wird und welche Funktionen später kostenpflichtig werden, können
+Käufer nicht erkennen. Hoofnagle et al.\ schlagen deshalb vor, Hersteller zur
+Angabe der erwarteten Lebensdauer und der Obsoleszenzrisiken zu verpflichten
+\cite[S.~866]{hoofnagle:2019}.
+
+\section{Gefährdung von Lebensdauer und Funktionsfähigkeit}\label{sec:cloud-folgen}
+
+Die materiellen Folgen dieser Mechanismen zeigen sich am deutlichsten, wenn
+ein Hersteller seine Dienste einstellt oder nachträglich einschränkt.
+
+\subsection{Fallbeispiel Saugroboter: Die Abschaltung der Neato-Cloud}\label{sec:cloud-neato}
+
+Vorwerk hatte die 2017 übernommene Tochter Neato Robotics 2023 geschlossen und
+zugesagt, die Cloud-Dienste der Saugroboter mindestens fünf Jahre
+weiterzubetreiben. Nur zwei Jahre später kündigte das Unternehmen die
+Abschaltung an und verwies auf gestiegene Anforderungen an die Cybersicherheit,
+denen die bestehende Infrastruktur nicht mehr genüge. Seitdem lassen sich die
+Roboter nur noch per Taste starten und reinigen dann die gesamte Wohnung in
+einem Durchgang; zuvor angelernte Räume und Sperrzonen erkennen sie
+voraussichtlich nicht mehr. Neben der Cybersicherheit nannte Vorwerk auch
+wirtschaftliche Gründe: Neato habe seine Ziele verfehlt, und der Konzern ziehe
+sich aus nicht wachsenden Geschäftsfeldern zurück \cite{heise:2025neato}.
+
+Gerade die Funktionen, die einen Saugroboter von einem einfachen Haushaltsgerät
+unterscheiden, hingen also an der Cloud. Dass die angelernten Räume mit ihr
+verschwinden, zeigt zudem, dass die in der Wohnung erhobenen Kartendaten
+faktisch nicht beim Nutzer, sondern beim Hersteller lagen. Aus
+Unternehmenssicht ist die Abschaltung folgerichtig, denn eine Cloud für ein
+eingestelltes Produkt verursacht Kosten ohne Erlöse. Diese Kosten werden jedoch
+auf die Käufer verlagert, deren Geräte an Wert verlieren.
+
+Der Fall zeigt zweierlei. Erstens war die Zusage nicht belastbar: Die
+Abschaltung kam rund drei Jahre früher als versprochen. Zweitens bewegte erst
+behördlicher Druck den Hersteller. Die italienische Wettbewerbsbehörde
+\acrshort{AGCM} leitete nach der Abschaltung im April~2026 ein Verfahren ein und
+erklärte im November Zusagen der Vorwerk-Gruppe für verbindlich: Wer seit
+Oktober~2020 einen Neato-Roboter gekauft hat, erhält europaweit gegen Rückgabe
+ein Vorwerk-Neugerät oder einen Gutschein über 500~Euro; für das Modell VR7
+gilt zudem eine zehnjährige Garantie auf digitale Dienste einschließlich
+Sicherheitsupdates \cite{agcm:2026b}. Die Entschädigung besteht allerdings im
+Umstieg auf ein Gerät desselben Konzerns, das ursprüngliche Gerät bleibt
+eingeschränkt.
+
+\subsection{Der Cloud-Tod: Gigaset Smart Home}\label{sec:cloud-gigaset}
+
+Im Extremfall wird funktionsfähige Hardware vollständig wertlos. Im
+Insolvenzverfahren der Gigaset Communications GmbH übernahm der Käufer der
+übrigen Unternehmensteile die Sparte Smart Home/Care nicht. Die Cloud-Dienste
+wurden deshalb zum 29.~März~2024 eingestellt; Apps, Sensoren und vernetzte
+Geräte waren danach nicht mehr nutzbar, gebuchte Kamera-Servicepakete endeten,
+und nur der lokale Alarm des Rauchmelders funktionierte weiter. Eine Rückgabe
+der Geräte war ausgeschlossen; Ansprüche konnten Kunden lediglich im
+Insolvenzverfahren anmelden \cite{gigaset:2024a}.
+
+Betroffen waren Geräte, die gerade zum Schutz der Wohnung angeschafft worden
+waren. Bei Sensoren und Kameras ist ein solcher Ausfall nicht nur ein
+Komfortverlust, sondern eine Schutzlücke, die Nutzer womöglich erst bemerken,
+wenn eine Meldung ausbleibt. Über den Fortbestand eines Dienstes entscheidet in der Insolvenz die
+Verwertung der Masse, nicht der Wille des Herstellers. Hoofnagle et al.\ führen
+das Scheitern von Unternehmen deshalb als eigenständiges Risiko vernetzter
+Produkte auf, das Käufern wertlose Geräte hinterlassen kann
+\cite[S.~816]{hoofnagle:2019}. Im engen Sinne Tusikovs, die unter Bricking eine
+vom Hersteller veranlasste Störung der Software mit dem Ziel versteht, die
+Funktion eines Produkts zu beeinträchtigen \cite[S.~2]{tusikov:2019}, handelt
+es sich hier zwar nicht um Bricking, da Gigaset die Geräte nicht unbrauchbar
+machen wollte. Für die Käufer ist das Ergebnis jedoch dasselbe.
+
+Dass auch wirtschaftlich starke Unternehmen Geräte bewusst stilllegen, zeigte
+bereits 2016 der Fall Revolv: Nach der Übernahme des Herstellers stellte Nest
+den Verkauf der Smart-Home-Zentrale ein und machte später sämtliche Geräte
+funktionsunfähig \cite[S.~811\,f.]{hoofnagle:2019}. Weniger drastisch verlief
+die Abschaltung bei Belkin. Der Hersteller kündigte 2025 an, zum
+31.~Januar~2026 Cloud-Dienste und App für die meisten Wemo-Geräte einzustellen,
+darunter auch Geräte, die erst vor weniger als zwei Jahren gekauft worden
+waren. Bereits eingerichtete Geräte lassen sich über eine lokale Schnittstelle
+etwa in Home Assistant weiter steuern, neu einrichten lassen sie sich ohne
+Herstellercloud jedoch nicht \cite{schoutsen:2025}. Eine lokale Schnittstelle
+mildert den Funktionsverlust also, beseitigt ihn aber nicht.
+
+\subsection{Softwarebedingte Obsoleszenz und prekäres Eigentum}\label{sec:cloud-obsoleszenz}
+
+Die UBA-Studie fasst unter Softwareobsoleszenz Phänomene, bei denen die
+Qualität einer Software so nachlässt, dass ein Produktsystem seine Funktion
+für eine erhebliche Zahl von Nutzern nicht mehr angemessen erfüllt
+\cite[S.~13]{jaegererben:2023}. Die Ursachen sieht sie weniger in der Technik
+als in wirtschaftlichen und organisatorischen Bedingungen wie eingestelltem
+Support \cite[S.~5]{jaegererben:2023}; Cloud-Dienste behandelt sie als eigene
+Kategorie externer Abhängigkeit \cite[S.~55]{jaegererben:2023}. Bei der
+Auswertung von Nutzerforen und Bewertungen stieß sie auf smarte Geräte, die nur
+in Verbindung mit Server-Infrastruktur funktionieren und teils schon kurz nach
+dem Kauf unbrauchbar wurden \cite[S.~16]{jaegererben:2023}. Unter den Begriff
+fallen Abschaltungen wie bei Neato und Gigaset ebenso wie einseitige
+Verschlechterungen per Update wie bei Futurehome.
+
+Dahinter steht ein verändertes Verständnis von Eigentum. Tusikov beschreibt
+den Kauf vernetzter Geräte als prekäre Form des Eigentums: Käufer besitzen die
+Hardware, nutzen die Software aber nur im Rahmen einer Lizenz, deren
+Bedingungen der Hersteller nach dem Kauf ändern kann. Über die Software
+kontrolliert er so auch die Hardware \cite[S.~2, 11]{tusikov:2019}. Hoofnagle
+et al.\ schlagen daher vor, dass Verbraucher die Bindung an den Hersteller
+lösen und ihr Gerät einem anderen Anbieter zuführen können, sobald die
+Unterstützung endet oder der Hersteller ausfällt \cite[S.~868]{hoofnagle:2019}.
+Tabelle~\ref{tab:cloud-faelle} fasst die betrachteten Fälle zusammen.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Abschaltungen und nachträgliche Eingriffe bei vernetzten Haushaltsgeräten}
+  \label{tab:cloud-faelle}
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.7cm}
+      >{\raggedright\arraybackslash}p{3.3cm}
+      >{\raggedright\arraybackslash}X
+      >{\raggedright\arraybackslash}p{2.9cm}@{}}
+    \toprule
+    \textbf{Fall (Jahr)} & \textbf{Anlass} & \textbf{Verbleibende Funktion}
+      & \textbf{Betroffene Dimension} \\
+    \midrule
+    Revolv (2016) & Übernahme durch Nest
+      & Keine; Zentrale funktionsunfähig & Anwendung \\
+    Chamberlain myQ (2023) & Sperre für Drittanbieter
+      & Steuerung nur über Hersteller-App und zahlende Partner
+      & Entscheidung \\
+    Gigaset Smart Home (2024) & Insolvenz, Sparte nicht übernommen
+      & Nur lokaler Alarm des Rauchmelders & Anwendung \\
+    Futurehome (2025) & Insolvenz, Abo-Zwang
+      & Manuelle Bedienung der Einzelgeräte ohne App und Automationen
+      & Entscheidung, Anwendung \\
+    Neato (2025) & Konzernentscheidung
+      & Start per Taste, Reinigung ohne Räume und Sperrzonen
+      & Anwendung, Daten \\
+    Belkin Wemo (2026) & Einstellung von Cloud und App
+      & Bereits eingerichtete Geräte über lokale Schnittstelle
+      & Anwendung \\
+    \bottomrule
+  \end{tabularx}
+  \par\smallskip
+  \raggedright\scriptsize
+  Quelle: Eigene Darstellung auf Basis von
+  \cite[S.~811\,f.]{hoofnagle:2019} sowie
+  \cite{homeassistant:2023,gigaset:2024a,schoutsen:2025,heise:2025neato}.
+\end{table}
+
+\section{Zwischenfazit}\label{sec:cloud-zwischenfazit}
+
+Die Cloud-Abhängigkeit vernetzter Haushaltsgeräte berührt alle drei
+Souveränitätsdimensionen: die Anwendungssouveränität, wenn die Nutzbarkeit am
+Fortbestand eines Anbieters hängt, die Entscheidungssouveränität, wenn
+Hersteller Funktionen nach dem Kauf sperren oder bepreisen, und die
+Datensouveränität, wenn Wohnungskarten nur beim Hersteller vorliegen. Die Fälle
+bestätigen die Leitthese, dass lokale Funktionen technisch möglich sind und aus
+wirtschaftlichen Gründen fehlen oder entfernt werden. Daraus folgt keine
+Forderung nach Autarkie, die auch der Bitkom ablehnt \cite[S.~7]{bitkom:2015},
+wohl aber nach einer lokalen Rückfallebene für Kernfunktionen, offenen
+Schnittstellen und einem geregelten Ausstiegspfad beim Supportende, wie sie in
+Teilen auch die UBA-Studie empfiehlt \cite[S.~18\,f.]{jaegererben:2023}.
+Inwieweit lokale Zentralen, offene Standards und alternative Firmware dies
+leisten, untersuchen die folgenden Kapitel.
