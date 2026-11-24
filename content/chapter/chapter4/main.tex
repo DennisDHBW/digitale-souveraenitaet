@@ -3,7 +3,7 @@
 \section{Schutzkonzepte im Heimnetzwerk}
 Eingriffe in die Firmware verschaffen zwar weitreichende Kontrolle über
 Smart-Home-Geräte, setzen aber Spezialwissen voraus und kosten meist die
-Herstellergarantie. Für die meisten Verbraucherinnen und Verbraucher kommt
+Herstellergarantie. Für die meisten Verbraucher kommt
 daher vor allem Anwendungssouveränität in Betracht. Der Sachverständigenrat
 für Verbraucherfragen (SVRV) versteht darunter die Fähigkeit, digitale
 Dienste kompetent, sicher und selbstbestimmt zu nutzen, ohne in die Software
@@ -21,7 +21,7 @@ einzigen Geräts als Brückenkopf für laterale Angriffe (\emph{Lateral
 Movement}) auf das gesamte Heimnetz (BSI, 2022). Das Bundesamt für Sicherheit
 in der Informationstechnik (BSI) empfiehlt deshalb, IoT-Geräte logisch von
 den übrigen Systemen zu trennen (BSI, 2022). In Unternehmensnetzen ist diese
-Trennung seit Langem Standard; im Heimnetz ist sie dagegen noch die Ausnahme.
+Trennung seit Langem Standard während sie im Heimnetz dagegen noch eine Ausnahme ist.
 
 Dafür gibt es zwei Wege. Das Gastnetz des Routers lässt sich ohne
 Fachkenntnisse zuschalten und isoliert die IoT-Geräte vom übrigen Heimnetz.
@@ -64,7 +64,7 @@ stellt die Varianten gegenüber.
 \end{table}
 
 Die Segmentierung erzeugt allerdings einen Zielkonflikt zwischen Sicherheit
-und Komfort: Smart-TVs oder Netzwerklautsprecher, die Medien per DLNA oder
+und Komfort: Smart-TVs oder Netzwerklautsprecher, die Medien per DLNA (Digital Living Network Alliance) oder
 AirPlay von einem lokalen NAS abspielen, verlieren nach der Isolierung
 Funktionen, sofern nicht Routing-Regeln oder Protokoll-Reflektoren nachhelfen
 (BSI, 2022).
@@ -121,10 +121,10 @@ lässt sich Digitale Souveränität nur durch Regulierung herstellen.
 
 \section{Gesetzlicher Rahmen und herstellerseitige Regulierung}
 Beim Kauf können Verbraucher Sicherheit und Datenschutz eines
-Smart-Home-Geräts kaum beurteilen. Diese Informationsasymmetrie nimmt
+Smart-Home-Geräts kaum beurteilen. Diese ungleiche Informationsverteilung nimmt
 Herstellern den Anreiz, in sichere Architekturen und lange Softwarepflege zu
 investieren (BSI, 2024a; EU, 2024). Die Europäische Union begegnet dem mit dem
-Cyber Resilience Act (CRA), das BSI ergänzend mit dem
+Cyber Resilience Act (CRA) und das BSI ergänzend mit dem
 IT"=Sicherheitskennzeichen.
 
 \subsection{Der Cyber Resilience Act der Europäischen Union}
@@ -182,28 +182,32 @@ deren Format das BSI in der Technischen Richtlinie TR-03183 konkretisiert,
 verbleibt beim Hersteller. Sie erlaubt ihm aber, bei neuen Schwachstellen in
 Bibliotheken betroffene Produkte schnell zu erkennen (BSI TR-03183, 2024).
 Den Nachweis der Konformität erbringen Hersteller der meisten
-Consumer-Geräte durch Selbstbewertung, für sicherheitskritische
-Produktklassen sind strengere Verfahren vorgesehen (EU, 2024).
+Consumer-Geräte durch Selbstbewertung. Dabei ist eine umfassende Risikoanalyse sowie technische Dokumentation erforderlich
+und Marküberwachungsbehörden wie die BSI sind befugt, dies einzufordern und zu überprüfen.
+Für sicherheitskritische Produktklassen sind strengere Verfahren wie die Einbindung von notifizierten Drittstellen vorgesehen (EU, 2024).
 
 Besonders der Supportzeitraum knüpft an die in
 Kapitel~\ref{chap:cloud-folgen} beschriebene softwarebedingte Obsoleszenz
 an. Hersteller müssen ihn an der zu erwartenden Nutzungsdauer ausrichten und
 sein Ende beim Kauf deutlich angeben (EU, 2024, Art.~13). Ein Gerät, das
 schon nach zwei Jahren keine Sicherheitsupdates mehr erhält, ist damit nicht
-mehr zulässig. Der CRA regelt jedoch die Sicherheit, nicht die
-Funktionsfähigkeit: Den Weiterbetrieb von Cloud-Diensten, an dem etwa die
-Gigaset-Geräte scheiterten, schreibt er nicht vor.
+mehr zulässig. Der CRA regelt somit die technische Sicherheit, garantiert aber nicht die Funktionsfähigkeit von Cloud-Diensten.
+Ein Smart-Home-Gerät kann unter dem CRA juristisch vollkommen sicher sein, nützt dem Verbraucher aber nichts, 
+wenn der Hersteller die Server abschaltet und das Gerät ohne Cloud-Verbindung den Dienst verweigert. 
+Das ökonomische Problem des Vendor-Lock-ins und des Funktionsverlusts bei Cloud-Abschaltungen wie es bei Gigaset der Fall war,
+wird durch den CRA nicht gelöst.
 
 \subsection{Das BSI-IT-Sicherheitskennzeichen}
 Während der CRA Mindeststandards für das Inverkehrbringen setzt, ist das
 IT"=Sicherheitskennzeichen des BSI ein freiwilliges Transparenzinstrument am
 Point of Sale (BSI, 2024b). Hersteller beantragen es mit der Erklärung, dass
 ihr Produkt die Anforderungen des BSI erfüllt. Für Smart-Home-Geräte stützen
-sich diese vor allem auf die Norm ETSI EN~303~645 (BSI, 2024b). Ein QR-Code
-auf der Verpackung führt zu einer herstellerunabhängigen Seite des BSI. Sie
+sich diese vor allem auf die Norm ETSI EN~303~645 (BSI, 2024b). Diese fokussieren
+sich auf grundlegende Sicherheitsstandards, um dem aktuellen Stand der Technik gerecht zu werden. 
+Ein QR-Code auf der Verpackung führt zu einer herstellerunabhängigen Seite des BSI. Sie
 gibt an, bis wann der Hersteller Sicherheitsupdates zusagt und ob dem BSI
 ungeschlossene Sicherheitslücken bekannt sind (BSI, 2024b). Das Kennzeichen
-ergänzt den CRA: Dieser verbietet ab 2027 unsichere Produkte, das Kennzeichen
+ergänzt den CRA. Dieser verbietet ab 2027 unsichere Produkte, das Kennzeichen
 belohnt schon heute Hersteller, die freiwillig höhere Standards und längere
 Updatezeiträume zusagen (BSI, 2024b).
 
