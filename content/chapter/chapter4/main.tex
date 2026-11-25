@@ -1,34 +1,37 @@
 %!TEX root = ../../../main.tex
+
+\glsunset{NAS}
+\glsunset{DLNA}
+\glsunset{DHCP}
+\glsunset{SBOM}
 \chapter{Heimnetz-Schutz und Gesetzlicher Rahmen (matr.-Nr. 5783256)}
 \section{Schutzkonzepte im Heimnetzwerk}
 Eingriffe in die Firmware verschaffen zwar weitreichende Kontrolle über
 Smart-Home-Geräte, setzen aber Spezialwissen voraus und kosten meist die
 Herstellergarantie. Für die meisten Verbraucher kommt
-daher vor allem Anwendungssouveränität in Betracht. Der Sachverständigenrat
-für Verbraucherfragen (SVRV) versteht darunter die Fähigkeit, digitale
+daher vor allem Anwendungssouveränität in Betracht. Der \gls{SVRV} versteht darunter die Fähigkeit, digitale
 Dienste kompetent, sicher und selbstbestimmt zu nutzen, ohne in die Software
-der Geräte einzugreifen (SVRV, 2021, S.~12\,ff.). Im Heimnetz lassen sich die
+der Geräte einzugreifen \cite[S. 12, ff.]{noauthor_digitale_2017}. Im Heimnetz lassen sich die
 Datenflüsse unveränderter Geräte mit zwei Ansätzen kontrollieren, der
 Netzsegmentierung und der DNS-Filterung. Anschließend werden die Grenzen
 dieses Selbstschutzes betrachtet.
 
 \subsection{Netzsegmentierung und logische Isolierung}
 Viele Consumer-IoT-Geräte, von IP-Kameras bis zu smarten Steckdosen, sind
-unzureichend abgesichert und werden nur kurz mit Updates versorgt
-(BSI, 2022). Befinden sie sich in einem flachen, unsegmentierten Netz mit
-Laptops, Smartphones oder Netzwerkspeichern (NAS), genügt die Übernahme eines
-einzigen Geräts als Brückenkopf für laterale Angriffe (\emph{Lateral
-Movement}) auf das gesamte Heimnetz (BSI, 2022). Das Bundesamt für Sicherheit
-in der Informationstechnik (BSI) empfiehlt deshalb, IoT-Geräte logisch von
-den übrigen Systemen zu trennen (BSI, 2022). In Unternehmensnetzen ist diese
-Trennung seit Langem Standard während sie im Heimnetz dagegen noch eine Ausnahme ist.
+unzureichend abgesichert und werden nur kurz mit Updates versorgt. 
+Befinden sie sich in einem flachen, unsegmentierten Netz mit
+Laptops, Smartphones oder Netzwerkspeichern (\gls{NAS}), genügt die Übernahme eines
+einzigen Geräts als Brückenkopf für laterale Angriffe auf das gesamte Heimnetz. 
+Das \gls{BSI} empfiehlt deshalb, IoT-Geräte logisch von
+den übrigen Systemen zu trennen. In Unternehmensnetzen ist diese
+Trennung seit Langem Standard während sie im Heimnetz dagegen noch eine Ausnahme ist \cite{noauthor_smarthome_nodate}.
 
 Dafür gibt es zwei Wege. Das Gastnetz des Routers lässt sich ohne
 Fachkenntnisse zuschalten und isoliert die IoT-Geräte vom übrigen Heimnetz.
-Virtuelle Netze (VLANs) erfordern dagegen verwaltbare Switches und
+\glspl{VLAN} erfordern dagegen verwaltbare Switches und
 Firewall-Regeln, erlauben aber festzulegen, welche Verbindungen zwischen den
 Segmenten zulässig sind, etwa dass Rechner auf IoT-Geräte zugreifen dürfen,
-aber nicht umgekehrt (BSI, 2022). Tabelle~\ref{tab:netzwerkarchitektur}
+aber nicht umgekehrt \cite{noauthor_smarthome_nodate}. Tabelle~\ref{tab:netzwerkarchitektur}
 stellt die Varianten gegenüber.
 
 \begin{table}[htbp]
@@ -60,50 +63,45 @@ stellt die Varianten gegenüber.
   \end{tabularx}
   \par\smallskip
   \raggedright\scriptsize
-  Quelle: Eigene Darstellung auf Basis von BSI (2022).
+  Quelle: Eigene Darstellung auf Basis von \cite{noauthor_smarthome_nodate}.
 \end{table}
 
 Die Segmentierung erzeugt allerdings einen Zielkonflikt zwischen Sicherheit
-und Komfort: Smart-TVs oder Netzwerklautsprecher, die Medien per DLNA (Digital Living Network Alliance) oder
-AirPlay von einem lokalen NAS abspielen, verlieren nach der Isolierung
-Funktionen, sofern nicht Routing-Regeln oder Protokoll-Reflektoren nachhelfen
-(BSI, 2022).
+und Komfort: Smart-TVs oder Netzwerklautsprecher, die Medien per \gls{DLNA} oder
+AirPlay von einem lokalen \gls{NAS} abspielen, verlieren nach der Isolierung
+Funktionen, sofern nicht Routing-Regeln oder Protokoll-Reflektoren nachhelfen \cite{noauthor_smarthome_nodate}.
 
 \subsection{DNS-Filterung und lokale Sinkholes}
 Während die Segmentierung vor Angriffen innerhalb des Netzes schützt, richtet
 sich die DNS-Filterung gegen den Abfluss von Daten. Viele Geräte senden im
 Hintergrund Telemetrie- und Nutzungsdaten an Hersteller oder Werbenetzwerke,
-ohne dass sich dies in den Einstellungen abschalten lässt (Pi-hole, 2024;
-AdGuard, 2024). Ansatzpunkt ist das Domain Name System (DNS), das
-Domainnamen in IP-Adressen übersetzt. Fast jede Verbindung eines Geräts
-beginnt mit einer solchen Anfrage. Ein DNS-Sinkhole wird, meist über die DHCP-Einstellungen des
-Routers, als zentraler DNS-Server des Heimnetzes eingetragen und prüft jede
+ohne dass sich dies in den Einstellungen abschalten lässt \cite{noauthor_overview_nodate, noauthor_uberblick_nodate}. 
+Ansatzpunkt ist das \gls{DNS}, das Domainnamen in IP-Adressen übersetzt. Fast jede Verbindung eines Geräts
+beginnt mit einer solchen Anfrage. Ein \gls{DNS}-Sinkhole wird, meist über die \gls{DHCP}-Einstellungen des
+Routers, als zentraler \gls{DNS}-Server des Heimnetzes eingetragen und prüft jede
 Namensauflösung gegen Sperrlisten. Legitime Anfragen leitet es an einen
-externen DNS-Server weiter. Für bekannte Tracking- oder Telemetriedomains
+externen \gls{DNS}-Server weiter. Für bekannte Tracking- oder Telemetriedomains
 antwortet es dagegen mit einer leeren Adresse, sodass das Gerät keine
-Verbindung aufbauen kann und die Daten das Heimnetz nicht verlassen
-(Pi-hole, 2024).
+Verbindung aufbauen kann und die Daten das Heimnetz nicht verlassen \cite{noauthor_overview_nodate}.
 
 Verbreitet sind zwei Open-Source-Lösungen. Pi-hole läuft etwa auf einem
 Raspberry Pi, filtert für alle Geräte im Netz ohne Installation auf den
 Endgeräten und zeigt in einem Dashboard, welche Geräte welche Domains anfragen
-(Pi-hole, 2024). AdGuard Home bietet dieselbe Filterung und unterstützt
-zusätzlich verschlüsselte Protokolle wie DNS-over-HTTPS (DoH) und
-DNS-over-TLS (DoT), sodass Internetanbieter oder Dritte die Anfragen nicht
-mitlesen können (AdGuard, 2024). An ihre Grenze stoßen beide Werkzeuge bei
-Geräten, die fest einprogrammierte IP-Adressen oder eigene DoH-Server nutzen.
-In diesen Fällen sind zusätzliche Firewall-Regeln nötig (AdGuard, 2024).
+\cite{noauthor_overview_nodate}. AdGuard Home bietet dieselbe Filterung und unterstützt
+zusätzlich verschlüsselte Protokolle wie \gls{DoH} und
+\gls{DoT}, sodass Internetanbieter oder Dritte die Anfragen nicht
+mitlesen können \cite{noauthor_uberblick_nodate}. An ihre Grenze stoßen beide Werkzeuge bei
+Geräten, die fest einprogrammierte IP-Adressen oder eigene \gls{DoH}- beziehungsweise \gls{DoT}-Server nutzen.
+In diesen Fällen sind zusätzliche Firewall-Regeln nötig \cite{noauthor_uberblick_nodate}.
 
 \subsection{Grenzen des technischen Selbstschutzes}
-Segmentierung und DNS-Filterung verschaffen technisch versierten Nutzern ein
+Segmentierung und \gls{DNS}-Filterung verschaffen technisch versierten Nutzern ein
 hohes Maß an Anwendungssouveränität. Betrieb und Pflege eines Sinkholes, das
 Beheben fälschlich gesperrter Domains (\emph{False Positives}) und die
-Einrichtung von VLANs erfordern jedoch IT-Kenntnisse und dauerhaften Aufwand.
-Der SVRV betont, dass verbraucherbezogene Digitale Souveränität nicht
-voraussetzen darf, dass alle Bürgerinnen und Bürger zu IT-Fachleuten werden
-(SVRV, 2021, S.~24\,ff.). Er stützt sie auf die Grundwerte Wahlfreiheit,
-Selbstbestimmung, Selbstkontrolle und Sicherheit und unterscheidet drei Handlungsfelder
-(SVRV, 2021, S.~18):
+Einrichtung von \glspl{VLAN} erfordern jedoch IT-Kenntnisse und dauerhaften Aufwand.
+Der \gls{SVRV} betont, dass verbraucherbezogene Digitale Souveränität nicht
+voraussetzen darf, dass alle Bürger zu IT-Fachleuten werden \cite[S. 24, ff.]{noauthor_digitale_2017}. Er stützt sie auf die Grundwerte Wahlfreiheit,
+Selbstbestimmung, Selbstkontrolle und Sicherheit und unterscheidet drei Handlungsfelder \cite[S. 18]{noauthor_digitale_2017}:
 \begin{itemize}
   \item \textbf{Technologie:} nutzerfreundliche, datensparsame und sichere
         Systeme (\emph{Privacy and Security by Design}),
@@ -115,27 +113,31 @@ Selbstbestimmung, Selbstkontrolle und Sicherheit und unterscheidet drei Handlung
 
 Wird die Verantwortung allein den Verbrauchern übertragen, entsteht eine
 digitale Zweiklassengesellschaft, in der nur IT-affine Haushalte ihr Netz
-wirksam abschirmen (SVRV, 2021, S.~31). Technischer Selbstschutz bleibt damit
-eine Notlösung, die fehlende Produktsicherheit nicht ersetzt. Flächendeckend
-lässt sich Digitale Souveränität nur durch Regulierung herstellen.
+wirksam abschirmen \cite[S. 31]{noauthor_digitale_2017}. Der SVRV hebt in diesem Zusammenhang hervor, 
+dass echte digitale Souveränität nicht durch nachträglichen Konfigurationsaufwand der Nutzer erzwungen werden darf, 
+sondern zwingend herstellerseitige Standardeinstellungen voraussetzt, 
+die auch technisch nicht versierte Verbraucher im Alltag automatisch schützen \cite[S. 18]{noauthor_digitale_2017}.
+Technischer Selbstschutz bleibt damit eine Notlösung, die fehlende Produktsicherheit nicht ersetzt. 
+Flächendeckend lässt sich Digitale Souveränität nur durch Regulierung herstellen.
 
 \section{Gesetzlicher Rahmen und herstellerseitige Regulierung}
 Beim Kauf können Verbraucher Sicherheit und Datenschutz eines
 Smart-Home-Geräts kaum beurteilen. Diese ungleiche Informationsverteilung nimmt
 Herstellern den Anreiz, in sichere Architekturen und lange Softwarepflege zu
-investieren (BSI, 2024a; EU, 2024). Die Europäische Union begegnet dem mit dem
-Cyber Resilience Act (CRA) und das BSI ergänzend mit dem
+investieren \cite{noauthor_cyber_nodate,noauthor_regulation_2024}. Die Europäische Union begegnet dem mit dem
+\gls{CRA} und das \gls{BSI} ergänzend mit dem
 IT"=Sicherheitskennzeichen.
 
 \subsection{Der Cyber Resilience Act der Europäischen Union}
 Die Verordnung (EU) 2024/2847 schafft erstmals EU-weit verbindliche
-Cybersicherheitsanforderungen für Produkte mit digitalen Elementen
-(EU, 2024). Für Elektrogeräte galten bislang zwar strenge Vorgaben etwa zum
-Brandschutz, für ihre Cybersicherheit aber kaum Mindeststandards. Der CRA
+Cybersicherheitsanforderungen für Produkte mit digitalen Elementen. 
+Für Elektrogeräte galten bislang zwar strenge Vorgaben etwa zum
+Brandschutz, für ihre Cybersicherheit aber kaum Mindeststandards. Der \gls{CRA}
 knüpft an die CE-Kennzeichnung an und ist seit Dezember 2024 in Kraft. Die
-Meldepflichten gelten seit September 2026, die übrigen Pflichten ab
-Dezember 2027 (EU, 2024). Hersteller, Importeure und Händler müssen die
-Anforderungen über den gesamten Lebenszyklus eines Produkts erfüllen.
+Meldepflichten gelten seit September 2026 und verpflichten Hersteller, 
+aktiv ausgenutzte Schwachstellen binnen 24 Stunden über die neue zentrale Meldeplattform der ENISA an die nationalen CSIRTs zu berichten.
+Die übrigen Pflichten gelten ab Dezember 2027.
+Hersteller, Importeure und Händler müssen die Anforderungen über den gesamten Lebenszyklus eines Produkts erfüllen \cite{noauthor_regulation_2024}.
 Tabelle~\ref{tab:cra_anforderungen} fasst die wichtigsten Pflichten zusammen.
 
 \begin{table}[htbp]
@@ -154,64 +156,65 @@ Tabelle~\ref{tab:cra_anforderungen} fasst die wichtigsten Pflichten zusammen.
     \hline
     Security by Default
       & Keine voreingestellten Standardpasswörter, automatische
-        Sicherheitsupdates (Anhang~I)
+        Sicherheitsupdates \cite{noauthor_regulation_2024}
       & Schutz neuer Geräte ohne eigenen Einrichtungsaufwand \\
     Supportzeitraum
       & Sicherheitsupdates für die erwartete Nutzungsdauer, in der Regel
-        mindestens fünf Jahre (Art.~13 Abs.~8)
+        mindestens fünf Jahre \cite{noauthor_regulation_2024}
       & Längere sichere Nutzung, weniger softwarebedingte Obsoleszenz \\
-    Software-Stückliste (SBOM)
-      & Dokumentation aller verwendeten Softwarekomponenten
-        (BSI TR-03183)
+    Software-Stückliste \gls{SBOM}
+      & Dokumentation aller verwendeten Softwarekomponenten \cite{noauthor_bsi_nodate}
       & Schnelleres Schließen von Lücken in Bibliotheken \\
     Meldepflicht
       & Meldung aktiv ausgenutzter Schwachstellen und schwerer Vorfälle an
-        ENISA und nationale CSIRTs (Art.~14)
+        ENISA und nationale CSIRTs \cite{noauthor_regulation_2024}
       & Frühe Warnung und koordinierte Abwehr \\
     \hline
   \end{tabularx}
   \par\smallskip
   \raggedright\scriptsize
-  Quelle: Eigene Darstellung auf Basis von EU (2024) und BSI (2024a).
+  Quelle: Eigene Darstellung auf Basis von \cite{noauthor_regulation_2024} und \cite{noauthor_cyber_nodate}.
 \end{table}
 
 Security by Default heißt konkret, dass Geräte ohne Standardpasswörter
 ausgeliefert werden und Sicherheitsupdates automatisch einspielen, wobei
-Nutzer dies abwählen können (EU, 2024, Anhang~I). Die Software-Stückliste,
-deren Format das BSI in der Technischen Richtlinie TR-03183 konkretisiert,
+Nutzer dies abwählen können \cite{noauthor_regulation_2024}. Die Software-Stückliste \gls{SBOM},
+deren Format das \gls{BSI} in der Technischen Richtlinie TR-03183 konkretisiert,
 verbleibt beim Hersteller. Sie erlaubt ihm aber, bei neuen Schwachstellen in
-Bibliotheken betroffene Produkte schnell zu erkennen (BSI TR-03183, 2024).
+Bibliotheken betroffene Produkte schnell zu erkennen \cite{noauthor_bsi_nodate}.
 Den Nachweis der Konformität erbringen Hersteller der meisten
 Consumer-Geräte durch Selbstbewertung. Dabei ist eine umfassende Risikoanalyse sowie technische Dokumentation erforderlich
-und Marküberwachungsbehörden wie die BSI sind befugt, dies einzufordern und zu überprüfen.
-Für sicherheitskritische Produktklassen sind strengere Verfahren wie die Einbindung von notifizierten Drittstellen vorgesehen (EU, 2024).
+und Marküberwachungsbehörden wie die \gls{BSI} sind befugt, dies einzufordern und zu überprüfen.
+Für sicherheitskritische Produktklassen sind strengere Verfahren wie die Einbindung von notifizierten Drittstellen vorgesehen \cite{noauthor_regulation_2024}.
 
 Besonders der Supportzeitraum knüpft an die in
 Kapitel~\ref{chap:cloud-folgen} beschriebene softwarebedingte Obsoleszenz
 an. Hersteller müssen ihn an der zu erwartenden Nutzungsdauer ausrichten und
-sein Ende beim Kauf deutlich angeben (EU, 2024, Art.~13). Ein Gerät, das
+sein Ende beim Kauf deutlich angeben \cite{noauthor_regulation_2024}. Ein Gerät, das
 schon nach zwei Jahren keine Sicherheitsupdates mehr erhält, ist damit nicht
-mehr zulässig. Der CRA regelt somit die technische Sicherheit, garantiert aber nicht die Funktionsfähigkeit von Cloud-Diensten.
-Ein Smart-Home-Gerät kann unter dem CRA juristisch vollkommen sicher sein, nützt dem Verbraucher aber nichts, 
+mehr zulässig. Hinsichtlich der Dauer stellt der CRA zudem klar, dass die Regelfrist von fünf Jahren kein starres Maximum bildet, 
+sondern bei langlebigen Smart-Home-Komponenten, wie Routern oder zentralen Gateways, an deren tatsächlich zu erwartende Nutzungsdauer angepasst werden muss und somit auch deutlich länger ausfallen kann \cite{noauthor_regulation_2024}.
+Der \gls{CRA} regelt somit die technische Sicherheit, garantiert aber nicht die Funktionsfähigkeit von Cloud-Diensten.
+Ein Smart-Home-Gerät kann unter dem \gls{CRA} juristisch vollkommen sicher sein, nützt dem Verbraucher aber nichts, 
 wenn der Hersteller die Server abschaltet und das Gerät ohne Cloud-Verbindung den Dienst verweigert. 
 Das ökonomische Problem des Vendor-Lock-ins und des Funktionsverlusts bei Cloud-Abschaltungen wie es bei Gigaset der Fall war,
-wird durch den CRA nicht gelöst.
+wird durch den \gls{CRA} nicht gelöst.
 
 \subsection{Das BSI-IT-Sicherheitskennzeichen}
-Während der CRA Mindeststandards für das Inverkehrbringen setzt, ist das
-IT"=Sicherheitskennzeichen des BSI ein freiwilliges Transparenzinstrument am
-Point of Sale (BSI, 2024b). Hersteller beantragen es mit der Erklärung, dass
-ihr Produkt die Anforderungen des BSI erfüllt. Für Smart-Home-Geräte stützen
-sich diese vor allem auf die Norm ETSI EN~303~645 (BSI, 2024b). Diese fokussieren
+Während der \gls{CRA} Mindeststandards für das Inverkehrbringen setzt, ist das
+IT"=Sicherheitskennzeichen des \gls{BSI} ein freiwilliges Transparenzinstrument am
+Point of Sale. Hersteller beantragen es mit der Erklärung, dass
+ihr Produkt die Anforderungen des \gls{BSI} erfüllt. Für Smart-Home-Geräte stützen
+sich diese vor allem auf die Norm ETSI EN~303~645. Diese fokussieren
 sich auf grundlegende Sicherheitsstandards, um dem aktuellen Stand der Technik gerecht zu werden. 
-Ein QR-Code auf der Verpackung führt zu einer herstellerunabhängigen Seite des BSI. Sie
-gibt an, bis wann der Hersteller Sicherheitsupdates zusagt und ob dem BSI
-ungeschlossene Sicherheitslücken bekannt sind (BSI, 2024b). Das Kennzeichen
-ergänzt den CRA. Dieser verbietet ab 2027 unsichere Produkte, das Kennzeichen
+Ein QR-Code auf der Verpackung führt zu einer herstellerunabhängigen Seite des \gls{BSI}. Sie
+gibt an, bis wann der Hersteller Sicherheitsupdates zusagt und ob dem \gls{BSI}
+ungeschlossene Sicherheitslücken bekannt sind. Das Kennzeichen
+ergänzt den \gls{CRA}. Dieser verbietet ab 2027 unsichere Produkte, das Kennzeichen
 belohnt schon heute Hersteller, die freiwillig höhere Standards und längere
-Updatezeiträume zusagen (BSI, 2024b).
+Updatezeiträume zusagen \cite{noauthor_it-sicherheitskennzeichen_nodate}.
 
-Zusammen entlasten CRA und IT"=Sicherheitskennzeichen die Verbraucher von der
+Zusammen entlasten \gls{CRA} und IT"=Sicherheitskennzeichen die Verbraucher von der
 Pflicht zum ständigen Selbstschutz. Sie ermöglichen informierte
 Kaufentscheidungen und machen grundlegenden Schutz im Betrieb zur Regel statt
 zur Ausnahme.
