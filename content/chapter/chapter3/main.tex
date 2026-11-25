@@ -1,6 +1,6 @@
 %!TEX root = ../../../main.tex
 \chapter{Technische Alternativen}\label{chap:lokal}
-\noindent\textit{Verfasser: [Name]}
+\noindent\textit{Verfasser: Daniel Schmal}
 \medskip
 
 Das vorherige Kapitel endete mit drei Anforderungen. Nötig sind eine lokale
@@ -24,14 +24,15 @@ Nutzer selbst.
 \subsection{Open Source als Gegenentwurf}\label{sec:lokal-opensource}
 
 Die Informatikerin Irene Weber, Professorin an der Hochschule für Angewandte
-Wissenschaften Kempten, beschreibt Open-Source-Software als Grundlage
-digitaler Souveränität. Weil der Quellcode offenliegt, lässt sich
-nachvollziehen, was die Software tut, und sie ist nicht an einzelne Anbieter
-gebunden \cite[S.~\textbf{??}]{weber:2026}. % TODO: Seitenzahl aus dem Buch eintragen
-Im Smart Home heißt das, dass Nutzer prüfen können, welche Daten ein Gerät
-verschickt, und dass Dritte eine Software weiterentwickeln können, wenn der
-Hersteller aufgibt. Genau dieser Schutzfaktor fehlte in den Fällen aus
-Kapitel~\ref{chap:cloud}.
+Wissenschaften Kempten, versteht Open-Source-Software als Software, die ihre
+Funktionsweise offenlegt und unabhängig von ihrem Produzenten verwendet werden
+kann \cite[S.~1]{weber:2026}. Für Anwender folgt daraus, dass kein Hersteller
+unbemerkt Funktionen einbauen kann, die etwa Daten abgreifen, und dass er
+weder die Nutzungsbedingungen ändern noch den Umstieg auf eine Cloud-Version
+erzwingen kann. Auch einen Vendor-Lock-in können Anwender vermeiden, weil sie
+die Software notfalls selbst weiterführen können, was in der Praxis allerdings
+aufwendig ist \cite[S.~47\,f.]{weber:2026}. Genau diese Eigenschaften fehlten
+in den Fällen aus Kapitel~\ref{chap:cloud}.
 
 Das Projekt Home Assistant hat diese Grundsätze in seiner Vision des
 \enquote{Open Home} für das Smart Home konkretisiert. Geräte sollen lokal
@@ -109,23 +110,25 @@ arbeiten mit Zentralen verschiedener Hersteller zusammen
 \cite[Abschn.~\enquote{Z-Wave Technology Essentials}]{zwave:oj}.
 
 Für den Lock-in ist vor allem der neuere Standard Matter wichtig. Die
-Connectivity Standards Alliance (\acrshort{CSA}) beschreibt ihn als lokale
-Verbindungstechnologie, bei der Geräte direkt im Heimnetz kommunizieren. Über
+Connectivity Standards Alliance (\acrshort{CSA}) entwickelt ihn als offenen
+und lizenzfreien Standard. Ein Matter-Netz arbeitet im Heimnetz auch ohne
+Verbindung zum Internet vollständig eigenständig \cite[S.~1, 7]{belli:2024}. Über
 die Funktion \enquote{Multi-Admin} legen Nutzer selbst fest, welche Plattformen
 auf ein Gerät zugreifen dürfen, auch mehrere gleichzeitig
-\cite[Abschn.~\enquote{Matter Basics}, \enquote{Security and Privacy}]{csa:matterfaq}.
+\cite[Abschn.~\enquote{Security and Privacy}]{csa:matterfaq}.
 Seit Version~1.2 aus dem Jahr 2023 gehören auch Saugroboter dazu
 \cite[Abschn.~\enquote{Nine New Device Types}]{csa:2023}. Wer heute einen
 Matter-fähigen Roboter kauft, kann ihn also lokal und unabhängig von der
 Hersteller-App steuern.
 
 Dem Beispielhaushalt hilft das nur, wenn der Hersteller Matter nachträglich
-per Update einführt. Zudem deckt der Standard nur festgelegte Gerätetypen und
-Funktionen ab, alles Weitere bleibt in der Hersteller-App
-\cite[Abschn.~\enquote{Supported Device Types}]{csa:matterdevices}. Hinter
-Matter stehen außerdem große Plattformbetreiber, also genau die Akteure, die
-die \acrshort{UBA}-Studie als mögliche Gatekeeper beschreibt
-(vgl. Abschnitt~\ref{sec:cloud-lockin}). Matter erleichtert damit vor allem
+per Update einführt. Zudem behalten viele Hersteller erweiterte Funktionen
+ihrer eigenen App vor. Belli, Barsocchi und Palumbo sehen außerdem keine
+Gewähr, dass Matter nicht zu einem Standard wird, den wenige große Anbieter
+kontrollieren. Schon der Zugang zur jeweils entstehenden Fassung der
+Spezifikation setzt eine Mitgliedschaft für 20\,000 US-Dollar im Jahr voraus
+\cite[S.~24]{belli:2024}. Das sind genau die Gatekeeper, vor denen die
+\acrshort{UBA}-Studie warnt (vgl. Abschnitt~\ref{sec:cloud-lockin}). Matter erleichtert damit vor allem
 den Wechsel zwischen großen Ökosystemen, garantiert aber keinen Weiterbetrieb
 nach dem Supportende. Für bereits gekaufte, geschlossene Geräte bleibt nur der
 Eingriff in das Gerät selbst.
@@ -183,7 +186,9 @@ einzigen Person als Hobby entwickelt, die das Projekt nicht vergrößern will
 Projekt Nimbus nennt diesen Entwickler als früheren Mitwirkenden
 \cite[Abschn.~\enquote{Free your vacuum from the cloud}]{nimbus:oj}. Offener
 Code kann also weitergeführt werden, wenn ein Projekt endet. Ob das geschieht,
-hängt aber von wenigen Freiwilligen ab.
+hängt aber von wenigen Freiwilligen ab. Weber sieht darin ein allgemeines Problem, denn
+vielen Open-Source-Projekten fehlt eine dauerhafte Finanzierung, um ihre
+Software sicher und aktuell zu halten \cite[S.~53]{weber:2026}.
 
 \subsection{KI-Assistenten als neues Werkzeug}\label{sec:lokal-ki}
 
@@ -201,17 +206,23 @@ Heimspeichers untersuchen und band ihn danach lokal an Home Assistant an
 \cite{singh:2026}. Andere entfernten Werbung und vorinstallierte Apps von
 Smart-TVs oder nahmen Geräte wieder in Betrieb, die ihre Hersteller aufgegeben
 hatten. Einem Nutzer genügte dafür die Modellnummer seines Fernsehers
-\cite{koebler:2026}. Die Befreiung von Geräten, bisher ein Werkzeug weniger
+\cite{koebler:2026}. Dass der Ansatz trägt, zeigt auch eine Studie von
+Humphries. Mit einem \acrshort{KI}-Assistenten rekonstruierte er das
+verschlüsselte, nicht dokumentierte Verwaltungsprotokoll der von Apple
+aufgegebenen AirPort-Router und schätzt den Aufwand auf vier bis fünf Tage
+statt mehrerer Monate \cite[S.~1]{humphries:2026}. Die Befreiung von Geräten, bisher ein Werkzeug weniger
 Fachleute, wird damit für deutlich mehr Menschen erreichbar. Der
 Beispielhaushalt könnte so auch einen Roboter wieder nutzbar machen, für den
 es kein fertiges Projekt gibt.
 
-Eine ehrliche Einschätzung muss aber die Risiken benennen. Erstens kann der
-Eingriff das Gerät zerstören. Der Sicherheitsdienstleister Dragos dokumentiert
-einen Fall, in dem ein \acrshort{KI}-Agent eine Industriesteuerung versehentlich
-dauerhaft unbrauchbar machte
-\cite[Abschn.~\enquote{Fact vs.\ myth}]{rothschild:2026}. Einem Saugroboter
-kann dasselbe passieren. Zweitens ist die erzeugte Software oft unsicher. In
+Eine ehrliche Einschätzung muss aber die Risiken benennen. Erstens bleibt viel
+menschliches Urteil nötig. Selbst in Humphries' Studie hinterließ der Assistent
+Geräte in ungültigen Zuständen, die von Hand zurückgesetzt werden mussten, und
+einzelne Versuche ließen Router schwach gesicherte WLAN-Netze ausstrahlen
+\cite[S.~3]{humphries:2026}. Zudem lässt sich so nur nachbauen, was lokal
+vorhanden ist. Daten, die allein in der Hersteller-Cloud lagen, lassen sich
+nicht zurückholen \cite[S.~4]{humphries:2026}, im Fall Neato etwa die
+Wohnungskarten (vgl. Abschnitt~\ref{sec:cloud-neato}). Zweitens ist die erzeugte Software oft unsicher. In
 einer Studie der Universität Stanford schrieben Teilnehmende mit
 \acrshort{KI}-Assistent deutlich unsichereren Code als ohne und hielten ihn
 trotzdem häufiger für sicher \cite[S.~2785]{perry:2023}. Drittens entsteht ein
@@ -252,7 +263,10 @@ erfüllen. Je tiefer ein Ansatz aber in bestehende Geräte eingreift, desto mehr
 Aufwand und Risiko verlagert er auf die Nutzer, und \acrshort{KI}-Assistenten
 senken nur die Einstiegshürde, nicht das Risiko. Am wirksamsten sind deshalb
 offene Standards, die Geräte schon beim Kauf mitbringen. Freie Software bleibt
-eine Notlösung für Geräte, die ohne solche Standards verkauft wurden. Für die
-meisten Verbraucher bleibt daher, ihre vorhandenen Geräte im Heimnetz
-abzusichern oder darauf zu setzen, dass der Gesetzgeber Hersteller zu mehr
-Offenheit verpflichtet. Beides behandelt das folgende Kapitel.
+eine Notlösung für Geräte, die ohne solche Standards verkauft wurden. Auch Humphries
+sieht \acrshort{KI}-gestützte Rekonstruktion nur als Rückfallebene. Er fordert,
+dass Hersteller bei Supportende den lokalen Betrieb ermöglichen und die dafür
+nötigen Informationen freigeben, notfalls durch Regulierung erzwungen
+\cite[S.~5\,f.]{humphries:2026}. Für die meisten Verbraucher bleibt daher,
+ihre vorhandenen Geräte im Heimnetz abzusichern oder darauf zu setzen, dass
+der Gesetzgeber Hersteller zu mehr Offenheit verpflichtet. Beides behandelt das folgende Kapitel.
