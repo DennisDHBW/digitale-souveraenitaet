@@ -8,45 +8,50 @@
         \includegraphics[height=2.5cm]{images/cover/logo-company.png}
     }
     
-    \enlargethispage{20mm}
     \begin{center}
-        \doublespacing{
-            \vspace*{12mm}
+        \vspace*{14mm}
+        \begin{spacing}{1.4}
             {\LARGE\textbf\documentTitle}
-        }\\
-        \vspace*{12mm}
+        \end{spacing}
+        \vspace*{13mm}
         {\large\textbf\documentTypePhrase}\\
 
         % degre only for bachelor thesis
         \ifDocType{T3300}{
-            \vspace*{12mm}
-            \degreePhrase\\
-            \vspace*{3mm}
+            \vspace*{13mm}
+            \degreePhrase\\[2mm]
             {\textbf\degree}\\
         }
 
         \IfStrEq{\showLecture}{true}{
-            \vspace*{12mm}
-            \lecturePhrase\\
-            \vspace*{0mm}
+            \vspace*{13mm}
+            \lecturePhrase\\[2mm]
             {\textbf\lecture}\\
         }
 
-        \vspace*{12mm}\departmentPhrase\space\department\\
-        \vspace*{0mm}\locationUniversityPhrase\locationUniversity\\
-        \vspace*{12mm}\documentAuthorPhrase\\
-        \vspace*{3mm}
-        {\large\textbf\documentAuthor}\\
-        \vspace*{12mm}\releaseDate\\
-        \vfill
-        \begin{spacing}{0.8}
-            \begin{tabularx}{\textwidth}{XX}
-                \textbf{\documentPeriodPhrase}                     & \documentPeriod                \\
-                \textbf{\matriculationNumberPhrase, \coursePhrase} & \matriculationNumber, \course  \\
-                \textbf{\companyPhrase}                            & \companyName, \companyLocation \\
-                \textbf{\tutorPhrase}                              & \tutor                         \\
-                \textbf{\evaluatorPhrase}                          & \evaluator
-            \end{tabularx}
-        \end{spacing}
+        \vspace*{13mm}
+        \departmentPhrase\space\department\\[1mm]
+        \locationUniversityPhrase{} \locationUniversity\\
+
+        \vspace*{8mm}
+        \documentAuthorPhrase\\[8mm]
+        {\renewcommand{\arraystretch}{1.45}%
+        \begin{tabular}{@{}l@{\hspace{12mm}}l@{}}
+            \textbf{Name} & \textbf{\matriculationNumberPhrase} \\[1mm]
+            \autorEins & \matrikelEins \\
+            \autorZwei & \matrikelZwei \\
+            \autorDrei & \matrikelDrei \\
+            \autorVier & \matrikelVier \\
+        \end{tabular}}\\
+
+        \vspace*{16mm}
+        \releaseDate
     \end{center}
+
+    \vfill
+    {\renewcommand{\arraystretch}{1.3}%
+    \begin{tabular}{@{}l@{\hspace{10mm}}l@{}}
+        \textbf{\coursePhrase}    & \course    \\
+        \textbf{\evaluatorPhrase} & \evaluator
+    \end{tabular}}
 \end{titlepage}
