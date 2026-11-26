@@ -140,8 +140,10 @@
         minnames=4,
         dashed=false
     ]{biblatex}
-    \DefineBibliographyStrings{german}{andothers={et\addabbrvspace al\adddot}}
-    \DefineBibliographyStrings{german}{artno={Art\adddot\addabbrvspace Nr\adddot}}
+    \AtBeginDocument{
+        \DefineBibliographyStrings{german}{andothers={et\addabbrvspace al\adddot}}
+        \DefineBibliographyStrings{german}{artno={Art\adddot\addabbrvspace Nr\adddot}}
+    }
 }
 \iflang{en}{%
     \usepackage[

@@ -1,0 +1,1568 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{hoofnagle:2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e285aa4d823b92049f9b2f98c438d196}{%
+           family={Hoofnagle},
+           familyi={H\bibinitperiod},
+           given={Chris\bibnamedelima Jay},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=5b606ae2ea76418d819ebe2343fdf737}{%
+           family={Kesari},
+           familyi={K\bibinitperiod},
+           given={Aniket},
+           giveni={A\bibinitperiod}}}%
+        {{hash=35b9d310beb0514aa7bd0e432e6edb26}{%
+           family={Perzanowski},
+           familyi={P\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b5ae9eded72abfb68f07551ec4e5451}
+      \strng{fullhash}{1b5ae9eded72abfb68f07551ec4e5451}
+      \strng{bibnamehash}{1b5ae9eded72abfb68f07551ec4e5451}
+      \strng{authorbibnamehash}{1b5ae9eded72abfb68f07551ec4e5451}
+      \strng{authornamehash}{1b5ae9eded72abfb68f07551ec4e5451}
+      \strng{authorfullhash}{1b5ae9eded72abfb68f07551ec4e5451}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{George Washington Law Review}
+      \field{number}{4}
+      \field{title}{The Tethered Economy}
+      \field{volume}{87}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{783\bibrangedash 874}
+      \range{pages}{92}
+    \endentry
+    \entry{tusikov:2019}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3e30a79430e136a4665cb9cf7c5beecb}{%
+           family={Tusikov},
+           familyi={T\bibinitperiod},
+           given={Natasha},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e30a79430e136a4665cb9cf7c5beecb}
+      \strng{fullhash}{3e30a79430e136a4665cb9cf7c5beecb}
+      \strng{bibnamehash}{3e30a79430e136a4665cb9cf7c5beecb}
+      \strng{authorbibnamehash}{3e30a79430e136a4665cb9cf7c5beecb}
+      \strng{authornamehash}{3e30a79430e136a4665cb9cf7c5beecb}
+      \strng{authorfullhash}{3e30a79430e136a4665cb9cf7c5beecb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{journaltitle}{Internet Policy Review}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{Regulation through {\enquote{bricking}}: private ordering in the {\enquote{Internet of Things}}}
+      \field{volume}{8}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.14763/2019.2.1405
+      \endverb
+    \endentry
+    \entry{valetudo:2025}{online}{}
+      \name{author}{1}{}{%
+        {{hash=903ca919468e53e33bd1f1349c80a95d}{%
+           family={{Valetudo}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{903ca919468e53e33bd1f1349c80a95d}
+      \strng{fullhash}{903ca919468e53e33bd1f1349c80a95d}
+      \strng{bibnamehash}{903ca919468e53e33bd1f1349c80a95d}
+      \strng{authorbibnamehash}{903ca919468e53e33bd1f1349c80a95d}
+      \strng{authornamehash}{903ca919468e53e33bd1f1349c80a95d}
+      \strng{authorfullhash}{903ca919468e53e33bd1f1349c80a95d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{27}
+      \field{month}{10}
+      \field{title}{Newcomer Guide}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://valetudo.cloud/pages/general/newcomer-guide/
+      \endverb
+      \verb{url}
+      \verb https://valetudo.cloud/pages/general/newcomer-guide/
+      \endverb
+    \endentry
+    \entry{fortune:2025}{online}{}
+      \name{author}{1}{}{%
+        {{hash=07f3fb85953bf41d154cba88825ee748}{%
+           family={{Fortune}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{07f3fb85953bf41d154cba88825ee748}
+      \strng{fullhash}{07f3fb85953bf41d154cba88825ee748}
+      \strng{bibnamehash}{07f3fb85953bf41d154cba88825ee748}
+      \strng{authorbibnamehash}{07f3fb85953bf41d154cba88825ee748}
+      \strng{authornamehash}{07f3fb85953bf41d154cba88825ee748}
+      \strng{authorfullhash}{07f3fb85953bf41d154cba88825ee748}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{month}{12}
+      \field{title}{Roomba bites the dust: iRobot files for bankruptcy, but don't worry -- your robot vacuum should still work}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://fortune.com/2025/12/16/roomba-parent-company-irobot-files-for-bankruptcy/
+      \endverb
+      \verb{url}
+      \verb https://fortune.com/2025/12/16/roomba-parent-company-irobot-files-for-bankruptcy/
+      \endverb
+    \endentry
+    \entry{trustedreviews:2026}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1b03485b0479d70df7fbab62ad394047}{%
+           family={{Trusted Reviews}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b03485b0479d70df7fbab62ad394047}
+      \strng{fullhash}{1b03485b0479d70df7fbab62ad394047}
+      \strng{bibnamehash}{1b03485b0479d70df7fbab62ad394047}
+      \strng{authorbibnamehash}{1b03485b0479d70df7fbab62ad394047}
+      \strng{authornamehash}{1b03485b0479d70df7fbab62ad394047}
+      \strng{authorfullhash}{1b03485b0479d70df7fbab62ad394047}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{iRobot is now Chinese -- but your Roomba data stays in the US}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.trustedreviews.com/news/irobot-is-now-chinese-but-your-roomba-data-stays-in-the-us
+      \endverb
+      \verb{url}
+      \verb https://www.trustedreviews.com/news/irobot-is-now-chinese-but-your-roomba-data-stays-in-the-us
+      \endverb
+    \endentry
+    \entry{patterson:2025}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a065acfc93f0c2c2a239ad60ad1bfafc}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {PCWorld}%
+      }
+      \strng{namehash}{a065acfc93f0c2c2a239ad60ad1bfafc}
+      \strng{fullhash}{a065acfc93f0c2c2a239ad60ad1bfafc}
+      \strng{bibnamehash}{a065acfc93f0c2c2a239ad60ad1bfafc}
+      \strng{authorbibnamehash}{a065acfc93f0c2c2a239ad60ad1bfafc}
+      \strng{authornamehash}{a065acfc93f0c2c2a239ad60ad1bfafc}
+      \strng{authorfullhash}{a065acfc93f0c2c2a239ad60ad1bfafc}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{10}
+      \field{title}{These smart beds began roasting their owners during AWS outage}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.pcworld.com/article/2948826/these-smart-beds-began-roasting-their-owners-during-aws-outage.html
+      \endverb
+      \verb{url}
+      \verb https://www.pcworld.com/article/2948826/these-smart-beds-began-roasting-their-owners-during-aws-outage.html
+      \endverb
+    \endentry
+    \entry{ternes:2022}{book}{}
+      \name{author}{1}{}{%
+        {{hash=855fa83134bb9a3cc2a665ebb690edbd}{%
+           family={Ternès\bibnamedelimb von\bibnamedelima Hattburg},
+           familyi={T\bibinitperiod\bibinitdelim v\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Anabel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Offenbach}%
+      }
+      \list{publisher}{1}{%
+        {Gabal}%
+      }
+      \strng{namehash}{855fa83134bb9a3cc2a665ebb690edbd}
+      \strng{fullhash}{855fa83134bb9a3cc2a665ebb690edbd}
+      \strng{bibnamehash}{855fa83134bb9a3cc2a665ebb690edbd}
+      \strng{authorbibnamehash}{855fa83134bb9a3cc2a665ebb690edbd}
+      \strng{authornamehash}{855fa83134bb9a3cc2a665ebb690edbd}
+      \strng{authorfullhash}{855fa83134bb9a3cc2a665ebb690edbd}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{30 Minuten Digitale Souveränität}
+      \field{year}{2022}
+      \field{dateera}{ce}
+    \endentry
+    \entry{shapiro:1999}{book}{}
+      \name{author}{2}{}{%
+        {{hash=6340b85ec1efcd67833befbb9a1ff577}{%
+           family={Shapiro},
+           familyi={S\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod}}}%
+        {{hash=affde3c8d511e90b7126c60a56e7ab49}{%
+           family={Varian},
+           familyi={V\bibinitperiod},
+           given={Hal\bibnamedelima R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston}%
+      }
+      \list{publisher}{1}{%
+        {Harvard Business School Press}%
+      }
+      \strng{namehash}{121f4eb5a606d2971837eb468f4ab01b}
+      \strng{fullhash}{121f4eb5a606d2971837eb468f4ab01b}
+      \strng{bibnamehash}{121f4eb5a606d2971837eb468f4ab01b}
+      \strng{authorbibnamehash}{121f4eb5a606d2971837eb468f4ab01b}
+      \strng{authornamehash}{121f4eb5a606d2971837eb468f4ab01b}
+      \strng{authorfullhash}{121f4eb5a606d2971837eb468f4ab01b}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{A Strategic Guide to the Network Economy}
+      \field{title}{Information Rules}
+      \field{year}{1999}
+      \field{dateera}{ce}
+    \endentry
+    \entry{oparamartins:2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d023652039c15872965117e4ef46dd86}{%
+           family={Opara-Martins},
+           familyi={O\bibinithyphendelim M\bibinitperiod},
+           given={Justice},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e1b76c6dae587f6ca8316f12d958a685}{%
+           family={Sahandi},
+           familyi={S\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1487e60477fb6a315fa69b2f8ee53c9f}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{91c2faade6a3044fd7cb6c2a6853f3ab}
+      \strng{fullhash}{91c2faade6a3044fd7cb6c2a6853f3ab}
+      \strng{bibnamehash}{91c2faade6a3044fd7cb6c2a6853f3ab}
+      \strng{authorbibnamehash}{91c2faade6a3044fd7cb6c2a6853f3ab}
+      \strng{authornamehash}{91c2faade6a3044fd7cb6c2a6853f3ab}
+      \strng{authorfullhash}{91c2faade6a3044fd7cb6c2a6853f3ab}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{4}
+      \field{journaltitle}{Journal of Cloud Computing}
+      \field{title}{Critical analysis of vendor lock-in and its impact on cloud computing migration: a business perspective}
+      \field{volume}{5}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1186/s13677-016-0054-z
+      \endverb
+    \endentry
+    \entry{jaegererben:2023}{report}{}
+      \name{author}{7}{}{%
+        {{hash=5d1963d0a90333153859ff9c9fcc60b4}{%
+           family={Jaeger-Erben},
+           familyi={J\bibinithyphendelim E\bibinitperiod},
+           given={Melanie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a136df6cf4c2dbc4ab4088d99fed1c9c}{%
+           family={Poppe},
+           familyi={P\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e5665f3513c863e2b3aeb83a93bd0d64}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Eduard},
+           giveni={E\bibinitperiod}}}%
+        {{hash=57192999590e2a6ce789a055d097a9b8}{%
+           family={Schaefer},
+           familyi={S\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8d3528fa08a960a9b86a4632890762d8}{%
+           family={Druschke},
+           familyi={D\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=21276c34759bea7b09a4d05aed4359e8}{%
+           family={Gröger},
+           familyi={G\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=22b9f050114a1ca4ca0ebba54fcfb4f7}{%
+           family={Behrens},
+           familyi={B\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Umweltbundesamt}%
+      }
+      \list{location}{1}{%
+        {Dessau-Roßlau}%
+      }
+      \strng{namehash}{c573bdc3feb1bab270f73e356c19efec}
+      \strng{fullhash}{7b681f003a20c73191f379ea3f9a5d7b}
+      \strng{bibnamehash}{c573bdc3feb1bab270f73e356c19efec}
+      \strng{authorbibnamehash}{c573bdc3feb1bab270f73e356c19efec}
+      \strng{authornamehash}{c573bdc3feb1bab270f73e356c19efec}
+      \strng{authorfullhash}{7b681f003a20c73191f379ea3f9a5d7b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{13/2023}
+      \field{subtitle}{Abschlussbericht}
+      \field{title}{Analyse der softwarebasierten Einflussnahme auf eine verkürzte Nutzungsdauer von Produkten}
+      \field{type}{Texte}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.umweltbundesamt.de/sites/default/files/medien/479/publikationen/texte_13-2023_analyse_der_softwarebasierten_einflussnahme_auf_eine_verkuerzte_nutzungsdauer_von_produkten.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.umweltbundesamt.de/sites/default/files/medien/479/publikationen/texte_13-2023_analyse_der_softwarebasierten_einflussnahme_auf_eine_verkuerzte_nutzungsdauer_von_produkten.pdf
+      \endverb
+    \endentry
+    \entry{homeassistant:2023}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a7403f9c5d5a8268a71c754dd2d17b0f}{%
+           family={{Home Assistant}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7403f9c5d5a8268a71c754dd2d17b0f}
+      \strng{fullhash}{a7403f9c5d5a8268a71c754dd2d17b0f}
+      \strng{bibnamehash}{a7403f9c5d5a8268a71c754dd2d17b0f}
+      \strng{authorbibnamehash}{a7403f9c5d5a8268a71c754dd2d17b0f}
+      \strng{authornamehash}{a7403f9c5d5a8268a71c754dd2d17b0f}
+      \strng{authorfullhash}{a7403f9c5d5a8268a71c754dd2d17b0f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{month}{11}
+      \field{title}{Removal of MyQ integration}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://home-assistant.io/blog/2023/11/06/removal-of-myq-integration/
+      \endverb
+      \verb{url}
+      \verb https://home-assistant.io/blog/2023/11/06/removal-of-myq-integration/
+      \endverb
+    \endentry
+    \entry{ninetofivemac:2023}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1bcd56f27312657645c1fa7ede4adee5}{%
+           family={{9to5Mac}},
+           familyi={9\bibinitperiod}}}%
+      }
+      \strng{namehash}{1bcd56f27312657645c1fa7ede4adee5}
+      \strng{fullhash}{1bcd56f27312657645c1fa7ede4adee5}
+      \strng{bibnamehash}{1bcd56f27312657645c1fa7ede4adee5}
+      \strng{authorbibnamehash}{1bcd56f27312657645c1fa7ede4adee5}
+      \strng{authornamehash}{1bcd56f27312657645c1fa7ede4adee5}
+      \strng{authorfullhash}{1bcd56f27312657645c1fa7ede4adee5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{month}{11}
+      \field{title}{Chamberlain myQ smart garage door opener blocks Homebridge and more, to display ads}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://9to5mac.com/2023/11/08/chamberlain-myq-blocks-homebridge/
+      \endverb
+      \verb{url}
+      \verb https://9to5mac.com/2023/11/08/chamberlain-myq-blocks-homebridge/
+      \endverb
+    \endentry
+    \entry{sammobile:2026}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ad0d3a1032e331f94ccc720d58971c72}{%
+           family={{SamMobile}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad0d3a1032e331f94ccc720d58971c72}
+      \strng{fullhash}{ad0d3a1032e331f94ccc720d58971c72}
+      \strng{bibnamehash}{ad0d3a1032e331f94ccc720d58971c72}
+      \strng{authorbibnamehash}{ad0d3a1032e331f94ccc720d58971c72}
+      \strng{authornamehash}{ad0d3a1032e331f94ccc720d58971c72}
+      \strng{authorfullhash}{ad0d3a1032e331f94ccc720d58971c72}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{SmartThings API access will soon require a \$5 monthly payment}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.sammobile.com/news/smartthings-api-access-will-soon-require-a-5-monthly-payment/
+      \endverb
+      \verb{url}
+      \verb https://www.sammobile.com/news/smartthings-api-access-will-soon-require-a-5-monthly-payment/
+      \endverb
+    \endentry
+    \entry{androidpure:2026}{online}{}
+      \name{author}{1}{}{%
+        {{hash=23fcee488d19c062cf236a30e119bb4b}{%
+           family={{AndroidPure}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{23fcee488d19c062cf236a30e119bb4b}
+      \strng{fullhash}{23fcee488d19c062cf236a30e119bb4b}
+      \strng{bibnamehash}{23fcee488d19c062cf236a30e119bb4b}
+      \strng{authorbibnamehash}{23fcee488d19c062cf236a30e119bb4b}
+      \strng{authornamehash}{23fcee488d19c062cf236a30e119bb4b}
+      \strng{authorfullhash}{23fcee488d19c062cf236a30e119bb4b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Samsung's SmartThings API Fee Starts in October: Who Has to Pay}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.androidpure.com/samsung-smartthings-api-fee/
+      \endverb
+      \verb{url}
+      \verb https://www.androidpure.com/samsung-smartthings-api-fee/
+      \endverb
+    \endentry
+    \entry{itreseller:2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=55f79b8767915520190a879c66bfc395}{%
+           family={{IT-Reseller}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{55f79b8767915520190a879c66bfc395}
+      \strng{fullhash}{55f79b8767915520190a879c66bfc395}
+      \strng{bibnamehash}{55f79b8767915520190a879c66bfc395}
+      \strng{authorbibnamehash}{55f79b8767915520190a879c66bfc395}
+      \strng{authornamehash}{55f79b8767915520190a879c66bfc395}
+      \strng{authorfullhash}{55f79b8767915520190a879c66bfc395}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{8}
+      \field{title}{MyStrom macht zahlreiche Funktionen kostenpflichtig}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.itreseller.ch/Artikel/101385/MyStrom_macht_zahlreiche_Funktionen_kostenpflichtig.html
+      \endverb
+      \verb{url}
+      \verb https://www.itreseller.ch/Artikel/101385/MyStrom_macht_zahlreiche_Funktionen_kostenpflichtig.html
+      \endverb
+    \endentry
+    \entry{heise:2025b}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9966be35c46bc70a8a390f6cc5ff8c24}{%
+           family={{heise online}},
+           familyi={h\bibinitperiod}}}%
+      }
+      \strng{namehash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \strng{fullhash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \strng{bibnamehash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \strng{authorbibnamehash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \strng{authornamehash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \strng{authorfullhash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tado tests payment model for basic app functions of smart heating thermostats}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://heise.de/-10291678
+      \endverb
+      \verb{url}
+      \verb https://heise.de/-10291678
+      \endverb
+    \endentry
+    \entry{ftc:2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8a5177f44fff48f5536eefc9fe8473c0}{%
+           family={{Federal Trade Commission}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=2722e15a2157e24cf15bf14ca2204cd4}{%
+           family={{FTC}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{2722e15a2157e24cf15bf14ca2204cd4}
+      \strng{fullhash}{8a5177f44fff48f5536eefc9fe8473c0}
+      \strng{bibnamehash}{2722e15a2157e24cf15bf14ca2204cd4}
+      \strng{authorbibnamehash}{8a5177f44fff48f5536eefc9fe8473c0}
+      \strng{authornamehash}{8a5177f44fff48f5536eefc9fe8473c0}
+      \strng{authorfullhash}{8a5177f44fff48f5536eefc9fe8473c0}
+      \strng{shortauthorbibnamehash}{2722e15a2157e24cf15bf14ca2204cd4}
+      \strng{shortauthornamehash}{2722e15a2157e24cf15bf14ca2204cd4}
+      \strng{shortauthorfullhash}{2722e15a2157e24cf15bf14ca2204cd4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{11}
+      \field{title}{Smart Products Surveyed Fail to Provide Consumers with Information on How Long Companies will Provide Software Updates}
+      \field{titleaddon}{Pressemitteilung}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ftc.gov/news-events/news/press-releases/2024/11/smart-products-surveyed-fail-provide-consumers-information-how-long-companies-will-provide-software
+      \endverb
+      \verb{url}
+      \verb https://www.ftc.gov/news-events/news/press-releases/2024/11/smart-products-surveyed-fail-provide-consumers-information-how-long-companies-will-provide-software
+      \endverb
+    \endentry
+    \entry{akerlof:1970}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f198b417f1390a0f8ff279349b43f47d}{%
+           family={Akerlof},
+           familyi={A\bibinitperiod},
+           given={George\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{fullhash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{bibnamehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{authorbibnamehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{authornamehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{authorfullhash}{f198b417f1390a0f8ff279349b43f47d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{number}{3}
+      \field{title}{The Market for {\enquote{Lemons}}: Quality Uncertainty and the Market Mechanism}
+      \field{volume}{84}
+      \field{year}{1970}
+      \field{dateera}{ce}
+      \field{pages}{488\bibrangedash 500}
+      \range{pages}{13}
+    \endentry
+    \entry{perzanowski:2016}{book}{}
+      \name{author}{2}{}{%
+        {{hash=35b9d310beb0514aa7bd0e432e6edb26}{%
+           family={Perzanowski},
+           familyi={P\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6d6d28473db561be33e7e5070b5b5722}{%
+           family={Schultz},
+           familyi={S\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{49e58812c3d97cca627cad796e26202c}
+      \strng{fullhash}{49e58812c3d97cca627cad796e26202c}
+      \strng{bibnamehash}{49e58812c3d97cca627cad796e26202c}
+      \strng{authorbibnamehash}{49e58812c3d97cca627cad796e26202c}
+      \strng{authornamehash}{49e58812c3d97cca627cad796e26202c}
+      \strng{authorfullhash}{49e58812c3d97cca627cad796e26202c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Personal Property in the Digital Economy}
+      \field{title}{The End of Ownership}
+      \field{year}{2016}
+      \field{dateera}{ce}
+    \endentry
+    \entry{protalinski:2016}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dab476e33542c1d96dacfe2758359ac1}{%
+           family={Protalinski},
+           familyi={P\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {VentureBeat}%
+      }
+      \strng{namehash}{dab476e33542c1d96dacfe2758359ac1}
+      \strng{fullhash}{dab476e33542c1d96dacfe2758359ac1}
+      \strng{bibnamehash}{dab476e33542c1d96dacfe2758359ac1}
+      \strng{authorbibnamehash}{dab476e33542c1d96dacfe2758359ac1}
+      \strng{authornamehash}{dab476e33542c1d96dacfe2758359ac1}
+      \strng{authorfullhash}{dab476e33542c1d96dacfe2758359ac1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{month}{4}
+      \field{title}{Alphabet's Nest will permanently turn off all Revolv hubs on May 15, 2016}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://venturebeat.com/technology/alphabets-nest-will-permanently-turn-off-all-revolv-hubs-on-may-15-2016
+      \endverb
+      \verb{url}
+      \verb https://venturebeat.com/technology/alphabets-nest-will-permanently-turn-off-all-revolv-hubs-on-may-15-2016
+      \endverb
+    \endentry
+    \entry{cullen:2016}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a096fccf42b6e3bfa03cf7fca8732a56}{%
+           family={Cullen},
+           familyi={C\bibinitperiod},
+           given={Drew},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {The Register}%
+      }
+      \strng{namehash}{a096fccf42b6e3bfa03cf7fca8732a56}
+      \strng{fullhash}{a096fccf42b6e3bfa03cf7fca8732a56}
+      \strng{bibnamehash}{a096fccf42b6e3bfa03cf7fca8732a56}
+      \strng{authorbibnamehash}{a096fccf42b6e3bfa03cf7fca8732a56}
+      \strng{authornamehash}{a096fccf42b6e3bfa03cf7fca8732a56}
+      \strng{authorfullhash}{a096fccf42b6e3bfa03cf7fca8732a56}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{month}{4}
+      \field{title}{Nest kills Revolv}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.theregister.com/2016/04/06/nest_kills_revolv/
+      \endverb
+      \verb{url}
+      \verb https://www.theregister.com/2016/04/06/nest_kills_revolv/
+      \endverb
+    \endentry
+    \entry{gigaset:2024b}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9f06c664322aace96443a10154bc34c5}{%
+           family={{Gigaset}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f06c664322aace96443a10154bc34c5}
+      \strng{fullhash}{9f06c664322aace96443a10154bc34c5}
+      \strng{bibnamehash}{9f06c664322aace96443a10154bc34c5}
+      \strng{authorbibnamehash}{9f06c664322aace96443a10154bc34c5}
+      \strng{authornamehash}{9f06c664322aace96443a10154bc34c5}
+      \strng{authorfullhash}{9f06c664322aace96443a10154bc34c5}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Why is the Gigaset Smart Home System no longer usable?}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://service.gigaset.com/en/support/solutions/articles/75000121662-why-is-the-gigaset-smart-home-system-no-longer-usable-
+      \endverb
+      \verb{url}
+      \verb https://service.gigaset.com/en/support/solutions/articles/75000121662-why-is-the-gigaset-smart-home-system-no-longer-usable-
+      \endverb
+    \endentry
+    \entry{gigaset:2024a}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9f06c664322aace96443a10154bc34c5}{%
+           family={{Gigaset}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f06c664322aace96443a10154bc34c5}
+      \strng{fullhash}{9f06c664322aace96443a10154bc34c5}
+      \strng{bibnamehash}{9f06c664322aace96443a10154bc34c5}
+      \strng{authorbibnamehash}{9f06c664322aace96443a10154bc34c5}
+      \strng{authornamehash}{9f06c664322aace96443a10154bc34c5}
+      \strng{authorfullhash}{9f06c664322aace96443a10154bc34c5}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Deactivation of services Smart Home/Care}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://service.gigaset.com/pl/support/solutions/articles/75000121636-deactivation-of-services-smart-home-care
+      \endverb
+      \verb{url}
+      \verb https://service.gigaset.com/pl/support/solutions/articles/75000121636-deactivation-of-services-smart-home-care
+      \endverb
+    \endentry
+    \entry{wittkowski:2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fe0ab888f7fc70ef947f1542078166ad}{%
+           family={Wittkowski},
+           familyi={W\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {netzwelt}%
+      }
+      \strng{namehash}{fe0ab888f7fc70ef947f1542078166ad}
+      \strng{fullhash}{fe0ab888f7fc70ef947f1542078166ad}
+      \strng{bibnamehash}{fe0ab888f7fc70ef947f1542078166ad}
+      \strng{authorbibnamehash}{fe0ab888f7fc70ef947f1542078166ad}
+      \strng{authornamehash}{fe0ab888f7fc70ef947f1542078166ad}
+      \strng{authorfullhash}{fe0ab888f7fc70ef947f1542078166ad}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{12}
+      \field{month}{4}
+      \field{title}{Nächster Smart Home-\hspace{0pt}Anbieter insolvent: Schluss mit Cloud-\hspace{0pt}Diensten, Apps und Geräte-\hspace{0pt}Support}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.netzwelt.de/news/229297-beliebter-smart-home-anbieter-cloud-dienste-und-apps-geraet-support-jetzt-eingestellt.html
+      \endverb
+      \verb{url}
+      \verb https://www.netzwelt.de/news/229297-beliebter-smart-home-anbieter-cloud-dienste-und-apps-geraet-support-jetzt-eingestellt.html
+      \endverb
+    \endentry
+    \entry{teltarif:2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=80be546c0e367136ecffeb735fe280d4}{%
+           family={{teltarif.de}},
+           familyi={t\bibinitperiod}}}%
+      }
+      \strng{namehash}{80be546c0e367136ecffeb735fe280d4}
+      \strng{fullhash}{80be546c0e367136ecffeb735fe280d4}
+      \strng{bibnamehash}{80be546c0e367136ecffeb735fe280d4}
+      \strng{authorbibnamehash}{80be546c0e367136ecffeb735fe280d4}
+      \strng{authornamehash}{80be546c0e367136ecffeb735fe280d4}
+      \strng{authorfullhash}{80be546c0e367136ecffeb735fe280d4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Smart Home: Gigaset schaltet bald Server ab}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.teltarif.de/arch/2024/kw13/s95061.html
+      \endverb
+      \verb{url}
+      \verb https://www.teltarif.de/arch/2024/kw13/s95061.html
+      \endverb
+    \endentry
+    \entry{belkin:2026}{online}{}
+      \name{author}{1}{}{%
+        {{hash=21dd04b53bc7d385687bfc505245fb6b}{%
+           family={{Belkin}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{21dd04b53bc7d385687bfc505245fb6b}
+      \strng{fullhash}{21dd04b53bc7d385687bfc505245fb6b}
+      \strng{bibnamehash}{21dd04b53bc7d385687bfc505245fb6b}
+      \strng{authorbibnamehash}{21dd04b53bc7d385687bfc505245fb6b}
+      \strng{authornamehash}{21dd04b53bc7d385687bfc505245fb6b}
+      \strng{authorfullhash}{21dd04b53bc7d385687bfc505245fb6b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Wemo Support Ending -- What You Need to Know}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.belkin.com/support/wemo
+      \endverb
+      \verb{url}
+      \verb https://www.belkin.com/support/wemo
+      \endverb
+    \endentry
+    \entry{rogerson:2022a}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a1beee97c6aeb0476904dd229554bb89}{%
+           family={Rogerson},
+           familyi={R\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IoT M2M Council}%
+      }
+      \strng{namehash}{a1beee97c6aeb0476904dd229554bb89}
+      \strng{fullhash}{a1beee97c6aeb0476904dd229554bb89}
+      \strng{bibnamehash}{a1beee97c6aeb0476904dd229554bb89}
+      \strng{authorbibnamehash}{a1beee97c6aeb0476904dd229554bb89}
+      \strng{authornamehash}{a1beee97c6aeb0476904dd229554bb89}
+      \strng{authorfullhash}{a1beee97c6aeb0476904dd229554bb89}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{27}
+      \field{month}{4}
+      \field{title}{Insteon shuts down leaving smart home users stranded}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.iotm2mcouncil.org/iot-library/news/iot-newsdesk/insteon-shuts-down-leaving-smart-home-users-stranded/
+      \endverb
+      \verb{url}
+      \verb https://www.iotm2mcouncil.org/iot-library/news/iot-newsdesk/insteon-shuts-down-leaving-smart-home-users-stranded/
+      \endverb
+    \endentry
+    \entry{schoutsen:2022}{online}{}
+      \name{author}{1}{}{%
+        {{hash=66d4178e295e34ac162323bdd6d995e9}{%
+           family={Schoutsen},
+           familyi={S\bibinitperiod},
+           given={Paulus},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Home Assistant}%
+      }
+      \strng{namehash}{66d4178e295e34ac162323bdd6d995e9}
+      \strng{fullhash}{66d4178e295e34ac162323bdd6d995e9}
+      \strng{bibnamehash}{66d4178e295e34ac162323bdd6d995e9}
+      \strng{authorbibnamehash}{66d4178e295e34ac162323bdd6d995e9}
+      \strng{authornamehash}{66d4178e295e34ac162323bdd6d995e9}
+      \strng{authorfullhash}{66d4178e295e34ac162323bdd6d995e9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{4}
+      \field{title}{Hey Insteon users!}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.home-assistant.io/blog/2022/04/19/for-insteon-users/
+      \endverb
+      \verb{url}
+      \verb https://www.home-assistant.io/blog/2022/04/19/for-insteon-users/
+      \endverb
+    \endentry
+    \entry{giga:2025}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c236475a2d098d9e27c22aefc4a371ee}{%
+           family={{GIGA}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{c236475a2d098d9e27c22aefc4a371ee}
+      \strng{fullhash}{c236475a2d098d9e27c22aefc4a371ee}
+      \strng{bibnamehash}{c236475a2d098d9e27c22aefc4a371ee}
+      \strng{authorbibnamehash}{c236475a2d098d9e27c22aefc4a371ee}
+      \strng{authornamehash}{c236475a2d098d9e27c22aefc4a371ee}
+      \strng{authorfullhash}{c236475a2d098d9e27c22aefc4a371ee}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Devolo zieht den Stecker: Was Smart-Home-Kunden jetzt wissen müssen}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.giga.de/tech/devolo-zieht-den-stecker-was-smart-home-kunden-jetzt-wissen-muessen--01K366GPAC5FJYE3SKV6AAG87P
+      \endverb
+      \verb{url}
+      \verb https://www.giga.de/tech/devolo-zieht-den-stecker-was-smart-home-kunden-jetzt-wissen-muessen--01K366GPAC5FJYE3SKV6AAG87P
+      \endverb
+    \endentry
+    \entry{google:2025}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={{Google}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{End of support for Nest Learning Thermostats (1st \& 2nd gen)}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://support.google.com/googlenest/answer/16233096?hl=en
+      \endverb
+      \verb{url}
+      \verb https://support.google.com/googlenest/answer/16233096?hl=en
+      \endverb
+    \endentry
+    \entry{golem:2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ce1dcbc0023ada4f87e5e5cc787b2810}{%
+           family={{Golem.de}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce1dcbc0023ada4f87e5e5cc787b2810}
+      \strng{fullhash}{ce1dcbc0023ada4f87e5e5cc787b2810}
+      \strng{bibnamehash}{ce1dcbc0023ada4f87e5e5cc787b2810}
+      \strng{authorbibnamehash}{ce1dcbc0023ada4f87e5e5cc787b2810}
+      \strng{authornamehash}{ce1dcbc0023ada4f87e5e5cc787b2810}
+      \strng{authorfullhash}{ce1dcbc0023ada4f87e5e5cc787b2810}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{Squeezebox und UE Smart Radio: Logitech deaktiviert Funktionen für Musikstreaming}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.golem.de/news/squeezebox-und-ue-smart-radio-logitech-deaktiviert-funktionen-fuer-musikstreaming-2401-181717.html
+      \endverb
+      \verb{url}
+      \verb https://www.golem.de/news/squeezebox-und-ue-smart-radio-logitech-deaktiviert-funktionen-fuer-musikstreaming-2401-181717.html
+      \endverb
+    \endentry
+    \entry{rudra:2026}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e39d107b07399876369c411ba54b100c}{%
+           family={Rudra},
+           familyi={R\bibinitperiod},
+           given={Sourav},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {It's FOSS}%
+      }
+      \strng{namehash}{e39d107b07399876369c411ba54b100c}
+      \strng{fullhash}{e39d107b07399876369c411ba54b100c}
+      \strng{bibnamehash}{e39d107b07399876369c411ba54b100c}
+      \strng{authorbibnamehash}{e39d107b07399876369c411ba54b100c}
+      \strng{authornamehash}{e39d107b07399876369c411ba54b100c}
+      \strng{authorfullhash}{e39d107b07399876369c411ba54b100c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{month}{1}
+      \field{title}{Bose SoundTouch End of Life Gets Less Painful With Public API Release}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://itsfoss.com/news/bose-soundtouch-api/
+      \endverb
+      \verb{url}
+      \verb https://itsfoss.com/news/bose-soundtouch-api/
+      \endverb
+    \endentry
+    \entry{stereoguide:2026}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dc01964ab61872bcd76021a217433ed8}{%
+           family={{Stereo Guide}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc01964ab61872bcd76021a217433ed8}
+      \strng{fullhash}{dc01964ab61872bcd76021a217433ed8}
+      \strng{bibnamehash}{dc01964ab61872bcd76021a217433ed8}
+      \strng{authorbibnamehash}{dc01964ab61872bcd76021a217433ed8}
+      \strng{authornamehash}{dc01964ab61872bcd76021a217433ed8}
+      \strng{authorfullhash}{dc01964ab61872bcd76021a217433ed8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{1}
+      \field{title}{Bose SoundTouch Cloud wurde abgeschaltet: Was Nutzern 2026 wirklich bleibt}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://stereoguide.de/ratgeber/news/bose-soundtouch-abschaltung/
+      \endverb
+      \verb{url}
+      \verb https://stereoguide.de/ratgeber/news/bose-soundtouch-abschaltung/
+      \endverb
+    \endentry
+    \entry{rogerson:2022b}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a1beee97c6aeb0476904dd229554bb89}{%
+           family={Rogerson},
+           familyi={R\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IoT M2M Council}%
+      }
+      \strng{namehash}{a1beee97c6aeb0476904dd229554bb89}
+      \strng{fullhash}{a1beee97c6aeb0476904dd229554bb89}
+      \strng{bibnamehash}{a1beee97c6aeb0476904dd229554bb89}
+      \strng{authorbibnamehash}{a1beee97c6aeb0476904dd229554bb89}
+      \strng{authornamehash}{a1beee97c6aeb0476904dd229554bb89}
+      \strng{authorfullhash}{a1beee97c6aeb0476904dd229554bb89}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{month}{6}
+      \field{title}{Insteon is back following takeover by users}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://iotm2mcouncil.org/iot-library/news/iot-newsdesk/insteon-is-back-following-takeover-by-users/
+      \endverb
+      \verb{url}
+      \verb https://iotm2mcouncil.org/iot-library/news/iot-newsdesk/insteon-is-back-following-takeover-by-users/
+      \endverb
+    \endentry
+    \entry{heise:2025a}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9966be35c46bc70a8a390f6cc5ff8c24}{%
+           family={{heise online}},
+           familyi={h\bibinitperiod}}}%
+      }
+      \strng{namehash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \strng{fullhash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \strng{bibnamehash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \strng{authorbibnamehash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \strng{authornamehash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \strng{authorfullhash}{9966be35c46bc70a8a390f6cc5ff8c24}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Google ends support for old Nest Learning thermostats, withdraws from EU market}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://heise.de/-10363800
+      \endverb
+      \verb{url}
+      \verb https://heise.de/-10363800
+      \endverb
+    \endentry
+    \entry{lyrion:oj}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9f04c089c86c92daaec3644f612dea51}{%
+           family={{Lyrion Community}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f04c089c86c92daaec3644f612dea51}
+      \strng{fullhash}{9f04c089c86c92daaec3644f612dea51}
+      \strng{bibnamehash}{9f04c089c86c92daaec3644f612dea51}
+      \strng{authorbibnamehash}{9f04c089c86c92daaec3644f612dea51}
+      \strng{authornamehash}{9f04c089c86c92daaec3644f612dea51}
+      \strng{authorfullhash}{9f04c089c86c92daaec3644f612dea51}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lyrion Music Server}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{version}{9.1}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://lyrion.org/reference/lyrion-music-server/
+      \endverb
+      \verb{url}
+      \verb https://lyrion.org/reference/lyrion-music-server/
+      \endverb
+    \endentry
+    \entry{gesellix:2026}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ce79ff61569a7c4982f84f939bf31700}{%
+           family={{Gesellix}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce79ff61569a7c4982f84f939bf31700}
+      \strng{fullhash}{ce79ff61569a7c4982f84f939bf31700}
+      \strng{bibnamehash}{ce79ff61569a7c4982f84f939bf31700}
+      \strng{authorbibnamehash}{ce79ff61569a7c4982f84f939bf31700}
+      \strng{authornamehash}{ce79ff61569a7c4982f84f939bf31700}
+      \strng{authorfullhash}{ce79ff61569a7c4982f84f939bf31700}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{bose-soundtouch}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{version}{0.110.1}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://pkg.go.dev/github.com/gesellix/bose-soundtouch@v0.110.1
+      \endverb
+      \verb{url}
+      \verb https://pkg.go.dev/github.com/gesellix/bose-soundtouch@v0.110.1
+      \endverb
+    \endentry
+    \entry{wang:2023}{article}{}
+      \name{author}{8}{}{%
+        {{hash=807a06392c69ed98e5b5221f96893eae}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Dingding},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ec448e74dab6b1425a0f3bae6fb622cd}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Muhui},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ccd882b9ba4635745b7eab986ff8d8f0}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=fdf4df45ac31656265c83a3cebaa9fd4}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yajin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a4e5d6ad75865a2389a7251db6180f43}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hexiang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7959dbe5cee19118162eab7e26bbdc8c}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Baolei},
+           giveni={B\bibinitperiod}}}%
+        {{hash=198e54cc63a5449a28e8c1c6b8ef6bfe}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7d405dc8c3ba97bdd21d7ea41fcd9b3b}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Xiapu},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{07a589ee4af6fee8ef98af2ad301d339}
+      \strng{fullhash}{3114f2d48bbb0bc9801f024b0bcfb5fc}
+      \strng{bibnamehash}{07a589ee4af6fee8ef98af2ad301d339}
+      \strng{authorbibnamehash}{07a589ee4af6fee8ef98af2ad301d339}
+      \strng{authornamehash}{07a589ee4af6fee8ef98af2ad301d339}
+      \strng{authorfullhash}{3114f2d48bbb0bc9801f024b0bcfb5fc}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Dependable and Secure Computing}
+      \field{title}{An Empirical Study on the Insecurity of End-of-Life ({EoL}) {IoT} Devices}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10321684
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10321684
+      \endverb
+    \endentry
+    \entry{bgb:2026}{misc}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{note}{§~327f Aktualisierungen; §~475b Sachmangel einer Ware mit digitalen Elementen}
+      \field{title}{Bürgerliches Gesetzbuch (BGB)}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.gesetze-im-internet.de/bgb/
+      \endverb
+      \verb{url}
+      \verb https://www.gesetze-im-internet.de/bgb/
+      \endverb
+    \endentry
+    \entry{dataact:2023}{misc}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{month}{12}
+      \field{note}{ABl. L, 2023/2854, 22.12.2023}
+      \field{title}{Verordnung ({EU}) 2023/2854 des Europäischen Parlaments und des Rates vom 13. Dezember 2023 über harmonisierte Vorschriften für einen fairen Datenzugang und eine faire Datennutzung sowie zur Änderung der Verordnung ({EU}) 2017/2394 und der Richtlinie ({EU}) 2020/1828 (Datenverordnung)}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://eur-lex.europa.eu/eli/reg/2023/2854/oj
+      \endverb
+      \verb{url}
+      \verb https://eur-lex.europa.eu/eli/reg/2023/2854/oj
+      \endverb
+    \endentry
+    \entry{noauthor_digitale_2017}{report}{}
+      \list{institution}{1}{%
+        {Sachverständigenrat für Verbraucherfragen}%
+      }
+      \list{language}{1}{%
+        {de}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{issn}{2510-0084}
+      \field{month}{6}
+      \field{title}{Digitale {Souveränität}. {Gutachten} des {Sachverständigenrats} für {Verbraucherfragen}}
+      \field{type}{techreport}
+      \field{year}{2017}
+      \field{pages}{31}
+      \range{pages}{1}
+    \endentry
+    \entry{noauthor_smarthome_nodate}{misc}{}
+      \list{language}{1}{%
+        {de}%
+      }
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bundesamt für Sicherheit in der Informationstechnik}
+      \field{title}{Smarthome – den {Wohnraum} sicher vernetzen}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/marvin/Zotero/storage/BDRLCUTR/smart-home.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Internet-der-Dinge-Smart-leben/Smart-Home/smart-home.html?nn=131484
+      \endverb
+      \verb{url}
+      \verb https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Internet-der-Dinge-Smart-leben/Smart-Home/smart-home.html?nn=131484
+      \endverb
+    \endentry
+    \entry{noauthor_overview_nodate}{misc}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{title}{Overview of {Pi}-hole - {Pi}-hole documentation}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.pi-hole.net/
+      \endverb
+      \verb{url}
+      \verb https://docs.pi-hole.net/
+      \endverb
+    \endentry
+    \entry{noauthor_uberblick_nodate}{misc}{}
+      \list{language}{1}{%
+        {de}%
+      }
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Was ist AdGuard Home?}
+      \field{title}{Überblick {|} {AdGuard} {DNS}-{Wissensdatenbank}}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/marvin/Zotero/storage/JT584LAL/overview.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://adguard-dns.io/kb/de/adguard-home/overview/
+      \endverb
+      \verb{url}
+      \verb https://adguard-dns.io/kb/de/adguard-home/overview/
+      \endverb
+    \endentry
+    \entry{noauthor_cyber_nodate}{misc}{}
+      \list{language}{1}{%
+        {de}%
+      }
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Der Cyber Resilience Act ist die erste europäische Verordnung, die ein angemessenes Maß an Cybersicherheit für alle vernetzten Produkte festlegt, die auf dem EU-Markt erhältlich sind - etwas, das es bisher nicht gab. Ziel ist es, die Cybersicherheit innerhalb der Europäischen Union zu erhöhen. Die neuen Vorschriften gelten in allen EU-Mitgliedstaaten und werden schrittweise umgesetzt.}
+      \field{journaltitle}{Bundesamt für Sicherheit in der Informationstechnik}
+      \field{title}{Cyber {Resilience} {Act}}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/marvin/Zotero/storage/A8KGF9SP/cyber_resilience_act.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Cyber_Resilience_Act/cyber_resilience_act.html?nn=1123204
+      \endverb
+      \verb{url}
+      \verb https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Cyber_Resilience_Act/cyber_resilience_act.html?nn=1123204
+      \endverb
+    \endentry
+    \entry{noauthor_regulation_2024}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{note}{Legislative Body: CONSIL, EP}
+      \field{title}{Regulation ({EU}) 2024/2847 of the {European} {Parliament} and of the {Council} of 23 {October} 2024 on horizontal cybersecurity requirements for products with digital elements and amending {Regulations} ({EU}) {No} 168/2013 and ({EU}) 2019/1020 and {Directive} ({EU}) 2020/1828 ({Cyber} {Resilience} {Act}) ({Text} with {EEA} relevance)}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb EUR-Lex HTML (EN):/home/marvin/Zotero/storage/FFSYS8SD/oj.html:text/html;EUR-Lex PDF (EN):/home/marvin/Zotero/storage/9FCB5E6Q/2024 - Regulation (EU) 20242847 of the European Parliament and of the Council of 23 October 2024 on horizo.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://data.europa.eu/eli/reg/2024/2847/oj
+      \endverb
+      \verb{url}
+      \verb http://data.europa.eu/eli/reg/2024/2847/oj
+      \endverb
+    \endentry
+    \entry{noauthor_bsi_nodate}{misc}{}
+      \list{language}{1}{%
+        {de}%
+      }
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bundesamt für Sicherheit in der Informationstechnik}
+      \field{title}{{BSI} {TR}-03183 {Cyber}-{Resilienz}-{Anforderungen}}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/marvin/Zotero/storage/AQYG4JWB/tr-03183.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/tr-03183.html?nn=1091552
+      \endverb
+      \verb{url}
+      \verb https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/tr-03183.html?nn=1091552
+      \endverb
+    \endentry
+    \entry{noauthor_it-sicherheitskennzeichen_nodate}{misc}{}
+      \list{language}{1}{%
+        {de}%
+      }
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bundesamt für Sicherheit in der Informationstechnik}
+      \field{title}{{IT}-{Sicherheitskennzeichen} - {Verbraucherseite}}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/marvin/Zotero/storage/CMZ46SS6/IT-SiK-fuer-Verbraucher_node.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/IT-SiK-fuer-Verbraucher/IT-SiK-fuer-Verbraucher_node.html
+      \endverb
+      \verb{url}
+      \verb https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/IT-SiK-fuer-Verbraucher/IT-SiK-fuer-Verbraucher_node.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
