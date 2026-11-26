@@ -3,14 +3,11 @@
 \noindent\textit{Verfasser: Dennis Gerhardt}
 \medskip
 
-Ein Saugroboter, der plötzlich keine Räume mehr kennt, oder eine Alarmanlage,
-die nach der Insolvenz des Herstellers nicht mehr funktioniert: Bei vernetzten
-Haushaltsgeräten bestimmt der Hersteller oft auch nach dem Kauf, was ein Gerät
+Ein Saugroboter kennt plötzlich keine Räume mehr, und eine Alarmanlage funktioniert nach der Insolvenz des Herstellers nicht mehr. Bei vernetzten Haushaltsgeräten bestimmt der Hersteller oft auch nach dem Kauf, was ein Gerät
 kann. Im vorherigen Kapitel ging es vor allem darum, welche Daten Smart-TVs
 sammeln. Dieses Kapitel geht einen Schritt weiter und untersucht, warum
 Hersteller ihre Geräte an eigene Server binden und welche Folgen das für
-Nutzbarkeit, Lebensdauer und Eigentum hat. Die These lautet: Der Cloud-Zwang ist
-meist keine technische Notwendigkeit, sondern eine Folge von Geschäftsmodellen.
+Nutzbarkeit, Lebensdauer und Eigentum hat. Die These lautet, dass der Cloud-Zwang meist keine technische Notwendigkeit ist, sondern eine Folge von Geschäftsmodellen.
 Das Problem ist dabei nicht die Cloud an sich, sondern dass es oft keine lokale
 Rückfallebene gibt.
 
@@ -19,8 +16,7 @@ Rückfallebene gibt.
 \subsection{Das Gerät als Endpunkt}\label{sec:cloud-endpunkt}
 
 Hoofnagle, Kesari und Perzanowski bezeichnen vernetzte Konsumgüter als
-\enquote{tethered}, also als angebunden: Sie bleiben nach dem Kauf dauerhaft mit
-dem Verkäufer verbunden und sind dadurch von ihm abhängig
+\enquote{tethered}, also als angebunden, weil sie nach dem Kauf dauerhaft mit dem Verkäufer verbunden und dadurch von ihm abhängig bleiben
 \cite[S.~785]{hoofnagle:2019}. Möglich wird das durch eingebettete Software,
 Sensoren und eine ständige Internetverbindung \cite[S.~789--792]{hoofnagle:2019}.
 Die eigentliche Steuerung findet dann nicht mehr im Gerät statt, sondern auf
@@ -35,7 +31,7 @@ Nutzer geben zudem gern Kontrolle ab, wenn die Bedienung dafür einfach ist
 aber nicht vollständig auf dem Server liegen. Updates lassen sich genauso an
 Geräte verteilen, deren Grundfunktionen lokal laufen.
 
-Für die Nutzer entsteht so eine doppelte Abhängigkeit: Sie sind auf die
+Für die Nutzer entsteht so eine doppelte Abhängigkeit. Sie sind auf die
 Infrastruktur des Herstellers angewiesen und darauf, dass es ihn weiterhin
 gibt. Beim Saugroboter betrifft das genau die Funktionen, die ihn von einem
 einfachen Gerät unterscheiden. Er tastet die Wohnung mit LiDAR- oder
@@ -78,20 +74,20 @@ Partner ausweichen oder ein neues Gerät kaufen.
 Der Bitkom versteht unter digitaler Souveränität unter anderem die Fähigkeit,
 \enquote{selbstbestimmt und selbstbewusst zwischen Alternativen} zu entscheiden
 \cite[S.~7]{bitkom:2015}. Überträgt man das auf Verbraucher, ist vor allem die
-Entscheidungssouveränität betroffen: Eine echte Wahl gibt es nur noch beim
+Entscheidungssouveränität betroffen, denn eine echte Wahl gibt es nur noch beim
 Kauf, nicht mehr während der Nutzung. Und selbst beim Kauf ist sie
 eingeschränkt, denn niemand kann vorhersehen, ob ein Hersteller seine
 Schnittstellen später schließt.
 
 \subsection{Hardware as a Service}\label{sec:cloud-haas}
 
-Hinter dem Lock-in steckt ein Finanzierungsproblem: Das Gerät wird einmal
+Hinter dem Lock-in steckt ein Finanzierungsproblem. Das Gerät wird einmal
 verkauft, der Betrieb der Server kostet aber dauerhaft Geld. Abonnements
 versprechen den Herstellern deshalb regelmäßigere Einnahmen
 \cite[S.~806]{hoofnagle:2019}. Das Gerät wird so zur Plattform für laufende
 Erlöse. Dazu gehört auch die Verwertung von Nutzungsdaten, die im vorherigen
 Kapitel beschrieben wurde. Laut Hoofnagle et al.\ verändert sich dadurch der
-Charakter des Geschäfts: Was wie ein Kauf aussieht, kann zu einem
+Charakter des Geschäfts, denn was wie ein Kauf aussieht, kann zu einem
 Dienstverhältnis werden, dessen Bedingungen der Anbieter später ändert. Statt
 ein Gerät auf einen Schlag abzuschalten, können Hersteller außerdem nach und
 nach Funktionen entfernen oder die Leistung verschlechtern
@@ -102,10 +98,9 @@ seine Smart-Home-Zentrale an rund 38\,000 Kunden verkauft und dabei versprochen,
 dass nach dem Kauf keine laufenden Kosten anfallen. Nach der Insolvenz 2025
 verlangte die Nachfolgefirma plötzlich eine Jahresgebühr. Wer nicht zahlt, kann
 die Geräte nicht mehr per App steuern und verliert Automationen und
-Energiefunktionen; übrig bleibt nur die manuelle Bedienung. Umgesetzt wurde das
+Energiefunktionen. Übrig bleibt nur die manuelle Bedienung. Umgesetzt wurde das
 per Firmware-Update auf Zentralen, die die Kunden längst bezahlt hatten
-\cite{schoutsen:2025}. Der Fall stützt die These dieses Kapitels besonders
-deutlich: Die Funktionen liefen vorher auf der Zentrale im eigenen Haushalt und
+\cite{schoutsen:2025}. Der Fall stützt die These dieses Kapitels besonders deutlich. Die Funktionen liefen vorher auf der Zentrale im eigenen Haushalt und
 wurden nicht aus technischen, sondern aus wirtschaftlichen Gründen gesperrt.
 Die Kunden steckten dabei in einer Zwickmühle. Wer nicht zahlte, verlor den
 Nutzen der Zentrale und aller eingebundenen Geräte. Wer zahlte, war auf eine
@@ -119,8 +114,7 @@ Käufer, die sich das vollständige Produkt nicht leisten können
 können Käufer außerdem bewusst entscheiden. Problematisch wird es erst, wenn
 bereits bezahlte Funktionen nachträglich Geld kosten. Dass der Markt das nicht
 von selbst regelt, liegt an einer Informationsasymmetrie. Vernetzte Produkte
-werden laut Hoofnagle et al.\ zu sogenannten Erfahrungsgütern: Ihre
-Eigenschaften zeigen sich erst nach dem Kauf \cite[S.~809]{hoofnagle:2019}. Wie
+werden laut Hoofnagle et al.\ zu sogenannten Erfahrungsgütern, deren Eigenschaften sich erst nach dem Kauf zeigen \cite[S.~809]{hoofnagle:2019}. Wie
 lange ein Dienst läuft und welche Funktionen später kostenpflichtig werden,
 können Käufer vorher nicht erkennen. Hoofnagle et al.\ schlagen deshalb vor,
 Hersteller zur Angabe der erwarteten Lebensdauer und der Obsoleszenzrisiken zu
@@ -131,7 +125,7 @@ verpflichten \cite[S.~866]{hoofnagle:2019}.
 Was diese Mechanismen konkret bedeuten, zeigt sich am deutlichsten, wenn ein
 Hersteller seine Dienste abschaltet oder nachträglich einschränkt.
 
-\subsection{Fallbeispiel Saugroboter: Die Abschaltung der Neato-Cloud}\label{sec:cloud-neato}
+\subsection{Fallbeispiel Saugroboter und das Ende der Neato-Cloud}\label{sec:cloud-neato}
 
 Vorwerk hatte die 2017 übernommene Tochterfirma Neato Robotics 2023
 geschlossen. Dabei versprach das Unternehmen, die Cloud-Dienste der
@@ -141,23 +135,21 @@ Unternehmen gestiegene Anforderungen an die Cybersicherheit, die die alte
 Infrastruktur nicht mehr erfülle. Seitdem lassen sich die Roboter nur noch per
 Taste starten und reinigen dann die ganze Wohnung auf einmal. Gelernte Räume
 und Sperrzonen erkennen sie voraussichtlich nicht mehr. Neben der
-Cybersicherheit nannte Vorwerk auch wirtschaftliche Gründe: Neato habe seine
+Cybersicherheit nannte Vorwerk auch wirtschaftliche Gründe. Neato habe seine
 Ziele nicht erreicht, und der Konzern ziehe sich aus Bereichen zurück, die nicht
 wachsen \cite{heise:2025neato}.
 
 Genau die Funktionen, die einen Saugroboter von einem einfachen Haushaltsgerät
 unterscheiden, hingen also an der Cloud. Dass die gelernten Räume mit ihr
-verschwinden, zeigt außerdem: Die Kartendaten aus der eigenen Wohnung lagen
-faktisch nicht beim Nutzer, sondern beim Hersteller. Aus Sicht des Unternehmens
+verschwinden, zeigt außerdem, dass die Kartendaten aus der eigenen Wohnung faktisch nicht beim Nutzer lagen, sondern beim Hersteller. Aus Sicht des Unternehmens
 ist die Abschaltung nachvollziehbar, denn eine Cloud für ein eingestelltes
 Produkt kostet Geld, ohne etwas einzubringen. Die Kosten tragen am Ende aber die
 Käufer, deren Geräte an Wert verlieren.
 
-Der Fall zeigt zwei Dinge. Erstens war das Versprechen nicht verlässlich: Die
-Abschaltung kam etwa drei Jahre früher als zugesagt. Zweitens reagierte der
+Der Fall zeigt zwei Dinge. Erstens war das Versprechen nicht verlässlich, denn die Abschaltung kam etwa drei Jahre früher als zugesagt. Zweitens reagierte der
 Hersteller erst auf Druck einer Behörde. Die italienische Wettbewerbsbehörde
 \acrshort{AGCM} leitete im April~2026 ein Verfahren ein. Im November erklärte
-sie Zusagen der Vorwerk-Gruppe für verbindlich: Wer seit Oktober~2020 einen
+sie Zusagen der Vorwerk-Gruppe für verbindlich. Wer seit Oktober~2020 einen
 Neato-Roboter gekauft hat, bekommt europaweit gegen Rückgabe ein neues
 Vorwerk-Gerät oder einen Gutschein über 500~Euro. Für das Modell VR7 gilt
 außerdem eine zehnjährige Garantie auf digitale Dienste einschließlich
@@ -165,7 +157,7 @@ Sicherheitsupdates \cite{agcm:2026b}. Die Entschädigung bedeutet allerdings,
 auf ein Gerät desselben Konzerns umzusteigen. Das ursprüngliche Gerät bleibt
 eingeschränkt.
 
-\subsection{Der Cloud-Tod: Gigaset Smart Home}\label{sec:cloud-gigaset}
+\subsection{Der Cloud-Tod von Gigaset Smart Home}\label{sec:cloud-gigaset}
 
 Im schlimmsten Fall wird funktionierende Hardware komplett wertlos. Als die
 Gigaset Communications GmbH insolvent wurde, übernahm der Käufer der übrigen
@@ -173,7 +165,7 @@ Firmenteile die Sparte Smart Home/Care nicht. Deshalb wurden die Cloud-Dienste
 zum 29.~März~2024 abgeschaltet. Danach ließen sich Apps, Sensoren und vernetzte
 Geräte nicht mehr nutzen, gebuchte Kamera-Servicepakete endeten, und nur der
 lokale Alarm des Rauchmelders funktionierte noch. Zurückgeben konnten Kunden
-ihre Geräte nicht; Ansprüche ließen sich nur im Insolvenzverfahren anmelden
+ihre Geräte nicht. Ansprüche ließen sich nur im Insolvenzverfahren anmelden
 \cite{gigaset:2024a}.
 
 Betroffen waren ausgerechnet Geräte, die zum Schutz der Wohnung gekauft worden
@@ -190,7 +182,7 @@ bei Gigaset kein Bricking vor, denn das Unternehmen wollte die Geräte nicht
 unbrauchbar machen. Für die Käufer ist das Ergebnis aber dasselbe.
 
 Dass auch große Unternehmen Geräte bewusst stilllegen, zeigte schon 2016 der
-Fall Revolv: Nest übernahm den Hersteller, stoppte den Verkauf der
+Fall Revolv. Nest übernahm den Hersteller, stoppte den Verkauf der
 Smart-Home-Zentrale und machte später alle Geräte funktionsunfähig
 \cite[S.~811\,f.]{hoofnagle:2019}. Weniger drastisch verlief die Abschaltung
 bei Belkin. Der Hersteller kündigte 2025 an, zum 31.~Januar~2026 Cloud-Dienste
@@ -216,8 +208,7 @@ wurden \cite[S.~16]{jaegererben:2023}. Darunter fallen Abschaltungen wie bei
 Neato und Gigaset ebenso wie Verschlechterungen per Update wie bei Futurehome.
 
 Dahinter steht ein neues Verständnis von Eigentum. Tusikov beschreibt den Kauf
-vernetzter Geräte als prekäre, also unsichere Form des Eigentums: Käufer
-besitzen zwar die Hardware, dürfen die Software aber nur im Rahmen einer Lizenz
+vernetzter Geräte als prekäre, also unsichere Form des Eigentums, denn Käufer besitzen zwar die Hardware, dürfen die Software aber nur im Rahmen einer Lizenz
 nutzen. Deren Bedingungen kann der Hersteller nach dem Kauf ändern. Über die
 Software bestimmt er damit auch über die Hardware \cite[S.~2, 11]{tusikov:2019}.
 Hoofnagle et al.\ schlagen daher vor, dass Verbraucher die Verbindung zum
@@ -242,7 +233,7 @@ aus diesem Kapitel zusammen.
       & \textbf{Betroffene Dimension} \\
     \midrule
     Revolv (2016) & Übernahme durch Nest
-      & Keine; Zentrale funktionsunfähig & Anwendung \\
+      & Keine, Zentrale funktionsunfähig & Anwendung \\
     Chamberlain myQ (2023) & Sperre für fremde Apps
       & Steuerung nur über Hersteller-App und zahlende Partner
       & Entscheidung \\
@@ -269,11 +260,8 @@ aus diesem Kapitel zusammen.
 \section{Zwischenfazit}\label{sec:cloud-zwischenfazit}
 
 Die Cloud-Abhängigkeit vernetzter Haushaltsgeräte betrifft alle drei
-Dimensionen digitaler Souveränität: die Anwendungssouveränität, wenn ein Gerät
-nur so lange funktioniert, wie es den Anbieter gibt; die
-Entscheidungssouveränität, wenn Hersteller Funktionen nach dem Kauf sperren
-oder kostenpflichtig machen; und die Datensouveränität, wenn Wohnungskarten nur
-beim Hersteller liegen. Die Fälle bestätigen die These: Lokale Funktionen wären
+Dimensionen digitaler Souveränität. Die Anwendungssouveränität leidet, wenn ein Gerät nur so lange funktioniert, wie es den Anbieter gibt, die Entscheidungssouveränität, wenn Hersteller Funktionen nach dem Kauf sperren oder kostenpflichtig machen, und die Datensouveränität, wenn Wohnungskarten nur
+beim Hersteller liegen. Die Fälle bestätigen die These, denn lokale Funktionen wären
 technisch möglich, fehlen aber aus wirtschaftlichen Gründen oder werden
 nachträglich entfernt. Daraus folgt nicht, dass Verbraucher völlig autark sein
 müssen. Auch der Bitkom hält Autarkie weder für erreichbar noch für
